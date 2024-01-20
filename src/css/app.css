@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: yekanBakh-Regular;
+
+  src: url('../src/fonts/woff/YekanBakhFaNum-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: yekanBakh-Bold;
+
+  src: url('../src/fonts/woff/YekanBakhFaNum-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-family: rokh;
+
+  src: url('../src/fonts/woff/Rokh-Black.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: stretch;
+
+  src: url('../fonts/StretchPro.otf') format("opentype");
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: yekanBakh-Bold;
+  user-select: none;
+}
+a {
+  cursor: pointer;
+}
+.shadow-1{
+  box-shadow: 0px -4px 96px -15px #0000001A;
+}
+.shadow-2{
+  box-shadow: 0px 0px 82.42106628417969px 0px #0000001C;
+}
+.shadow-3{
+  box-shadow: -11.199999809265137px 8.800000190734863px 24px 0px #D1AF89B2;
+}
+.shadow-4{
+  box-shadow: 0px 0px 37.22671127319336px 0px #00000033;
+}
+.shadow-5{
+  filter: drop-shadow(0px 0px 200px #0000001A);
+}
+.shadow-6{
+  box-shadow: -17.920000076293945px 14.079999923706055px 102.39999389648438px 0px #F76B16B2;
+
+}
+.shadow-7{
+  box-shadow: 0px 0px 15px 3px #0000001A;
+}
+.shadow-8{
+  box-shadow: -11.199999809265137px 8.800000190734863px 64px 0px #D1AF89B2;
+}
+.shadow-9{
+  box-shadow: -14px 11px 80px 0px #F76B164D;
+}
+.bg-pinkgradient2{
+  background: linear-gradient(360deg, #FFCEC7 0%, rgba(217, 217, 217, 0) 68.04%, rgba(255, 255, 255, 0) 68.04%);
+}
+.mobileMenu{
+  background-color: #fffffff5;
+  border: 1px solid #00000026;
+  display: none;
+}
+.mobileMenu.active{
+  display: block;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.bg-migrate{
+  background-image: url('../src/img/Rectangle\ 153\ \(2\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1020px) {
+ 
+}
