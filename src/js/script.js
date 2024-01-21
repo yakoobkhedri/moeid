@@ -62,37 +62,6 @@ document.addEventListener('mousemove', (event) => {
 
 // swiper
 
-var banner = new Swiper(".banner", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  autoplay: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-var banner2 = new Swiper(".banner2", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  autoplay: true,
-  pagination: {
-    el: ".swiper-pagination2",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-var banner3 = new Swiper(".banner3", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  autoplay: true,
-  pagination: {
-    el: ".swiper-pagination3",
-    clickable: true,
-  }
-});
 var category = new Swiper(".category", {
   slidesPerView: 1.3,
   spaceBetween: 20,
@@ -106,6 +75,44 @@ var category = new Swiper(".category", {
       slidesPerView: 3,
     }
   },
+});
+var lawyer2 = new Swiper(".lawyer2", {
+  loop: true,
+  spaceBetween: 48,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var lawyer = new Swiper(".lawyer", {
+  loop: true,
+  spaceBetween: 26,
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
 });
 var services = new Swiper(".services", {
   loop: true,
@@ -122,7 +129,7 @@ var services = new Swiper(".services", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },
+  }
 });
 
 // change language
