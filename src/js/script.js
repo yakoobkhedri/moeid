@@ -76,6 +76,30 @@ var category = new Swiper(".category", {
     }
   },
 });
+var ourServices = new Swiper(".ourServices", {
+  loop: true,
+  spaceBetween: 36,
+  slidesPerView: 1,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
 var lawyer2 = new Swiper(".lawyer2", {
   loop: true,
   spaceBetween: 48,
@@ -85,7 +109,7 @@ var lawyer2 = new Swiper(".lawyer2", {
     disableOnInteraction: false,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination2",
     clickable: true,
   },
   navigation: {

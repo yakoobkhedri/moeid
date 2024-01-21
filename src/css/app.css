@@ -87,7 +87,7 @@ input[type="number"] {
   background-position: center;
   background-repeat: no-repeat;
 }
-.swiper-pagination-clickable .swiper-pagination-bullet{
+.lawyer .swiper-pagination-clickable .swiper-pagination-bullet{
   background-color: #D9D9D9;
   width: 10px;
   height: 6px!important;
@@ -95,8 +95,12 @@ input[type="number"] {
   transition: all .4s;
   opacity: 1;
 }
-.swiper-pagination-bullet-active{
+.lawyer .swiper-pagination-bullet-active{
   background-color: #1E2D48!important;
+  width: 33px!important;
+}
+.lawyer2Box .swiper-pagination2-bullet .swiper-pagination2-bullet-active{
+  background-color: #F76B16!important;
   width: 33px!important;
 }
 @media (max-width: 1020px) {
