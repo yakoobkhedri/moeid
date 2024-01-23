@@ -1,31 +1,37 @@
 // menu
 
-// let list1 = Array.from(document.querySelectorAll('.list1 > a'));
-// let list2 = Array.from(document.querySelectorAll('.list2 > ul'));
-// let arrows = Array.from(document.querySelectorAll('.list1 img[alt="arrow"]'));
+let btn = Array.from(document.querySelectorAll('.viza'));
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
 // let mobileMenu = document.querySelector('.mobileMenu');
 // let dropdownBtn = document.getElementById('dropdownBtn');
 // let hamIcon = document.getElementById('hamIcon');
 // let serviceLink = document.getElementById('service-link');
 // let dropdown = document.querySelector('.dropdown');
 
-// list1.forEach((item) => {
-//   item.addEventListener('mouseover', function () {
-//     arrows.forEach((item)=>{item.classList.add('opacity-0')})
-//     item.querySelector('img[alt="arrow"]').classList.remove('opacity-0');
-//     let tabId = item.dataset.id;
-//     list2.forEach((content) => {
-//       let contentId = content.dataset.id;
-//       if (tabId === contentId) {
-//         content.classList.add('grid');
-//         content.classList.remove('hidden');
-//       } else {
-//         content.classList.remove('grid');
-//         content.classList.add('hidden');
-//       }
-//     })
-//   })
-// });
+dropdownBtn.forEach((item)=>{
+  item.addEventListener('mouseenter',function () {
+    item.querySelector('.dropdown').style.display='block';
+  })
+})
+
+btn.forEach((item) => {
+  item.addEventListener('mouseover', function () {
+    btn.forEach((items) => {items.classList.remove('active')});
+    let tabId = item.dataset.id;
+    item.classList.add('active');
+    tabContent.forEach((content) => {
+      let contentId = content.dataset.id;
+      if (tabId === contentId) {
+        content.classList.add('grid');
+        content.classList.remove('hidden');
+      } else {
+        content.classList.remove('grid');
+        content.classList.add('hidden');
+      }
+    })
+  })
+});
 
 // dropdownBtn.addEventListener('click', function () {
 //   this.querySelector('svg').classList.toggle('active');

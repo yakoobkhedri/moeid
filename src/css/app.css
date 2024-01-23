@@ -112,92 +112,15 @@ input[type="number"] {
   background-color: #F76B16!important;
   width: 33px!important;
 }
-.container .owl-carousel {
-  max-width: 800px;
-  position: relative;
+.dropdown.actie{
+  display: grid!important;
 }
-.container .owl-carousel .item {
-  margin: 0 auto;
-  position: relative;
-  max-width: max-content;
-  overflow: hidden;
-  transition: all 1s ease;
-  padding: 0 60px;
+.viza.active{
+  background-color: #E3E8F2;
+  color: #1E2D48;
 }
-.container .owl-carousel .item .images {
-  transition: all 1s ease;
-}
-.container .owl-carousel .item .images img {
-  max-width: max-content;
-  position: absolute;
-  transition: all 1s ease;
-}
-.container .owl-carousel .item .images .plane {
-  position: absolute;
-  right: 0;
-  top: 30px;
-  transform: translate(100%);
-}
-.container .owl-carousel .item .images .earth {
-  top: 50%;
-  left: 10px;
-  transform: translate(-110%, -50%);
-}
-.container .owl-carousel .item .images .text {
-  bottom: 10%;
-  right: 0;
-  transform: translate(0, 250%);
-}
-.container .owl-carousel .item.active .images .plane {
-  transform: translate(0);
-}
-.container .owl-carousel .item.active .images .earth {
-  transform: translate(0, -50%);
-}
-.container .owl-carousel .item.active .images .text {
-  transform: translate(0, 0%);
-}
-.container .owl-carousel .owl-nav {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-}
-.container .owl-carousel .owl-nav .owl-prev,
-.container .owl-carousel .owl-nav .owl-next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #eee;
-  border-radius: 50%;
-  color: #000;
-  font-size: 50px;
-  width: 50px;
-  padding: 20px;
-  box-shadow: 0 0 3px #9c9c9c;
-  height: 50px;
-}
-.container .owl-carousel .owl-nav .owl-prev span,
-.container .owl-carousel .owl-nav .owl-next span {
-  position: absolute;
-  top: -8px;
-}
-.container .owl-carousel .owl-dots {
-  display: flex;
-  gap: 2px;
-}
-.container .owl-carousel .owl-dots .owl-dot {
-  width: 15px;
-  height: 15px;
-  background-color: #000000;
-  border-radius: 50%;
-  border: 4px solid transparent;
-}
-.container .owl-carousel .owl-dots .owl-dot.active {
-  border: 4px solid #bb1010;
+.viza.active img{
+  opacity: 1;
 }
 @media (max-width: 1020px) {
  
