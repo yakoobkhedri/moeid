@@ -3,6 +3,7 @@
 let btn = Array.from(document.querySelectorAll('.viza'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
 let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
+let dropdown=Array.from(document.getElementsByClassName('dropdown'));
 // let mobileMenu = document.querySelector('.mobileMenu');
 // let dropdownBtn = document.getElementById('dropdownBtn');
 // let hamIcon = document.getElementById('hamIcon');
@@ -14,7 +15,11 @@ dropdownBtn.forEach((item)=>{
     item.querySelector('.dropdown').style.display='block';
   })
 })
-
+dropdown.forEach((item)=>{
+  item.addEventListener('mouseleave',function () {
+    item.style.display='none';
+  })
+})
 btn.forEach((item) => {
   item.addEventListener('mouseover', function () {
     btn.forEach((items) => {items.classList.remove('active')});
