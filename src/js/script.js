@@ -4,21 +4,29 @@ let btn = Array.from(document.querySelectorAll('.viza'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
 let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
 let dropdown=Array.from(document.getElementsByClassName('dropdown'));
-// let mobileMenu = document.querySelector('.mobileMenu');
-// let dropdownBtn = document.getElementById('dropdownBtn');
-// let hamIcon = document.getElementById('hamIcon');
-// let serviceLink = document.getElementById('service-link');
-// let dropdown = document.querySelector('.dropdown');
+let linkmenu=Array.from(document.getElementsByClassName('linkmenu'));
 
 dropdownBtn.forEach((item)=>{
   item.addEventListener('mouseenter',function () {
-    item.querySelector('.dropdown').style.display='block';
+    item.querySelector('.dropdown').style.display='grid';
+    linkmenu.forEach((link)=>{
+      link.addEventListener('mouseenter', function () {
+        item.querySelector('.dropdown').style.display='none';
+      })
+    })
   })
 })
 dropdown.forEach((item)=>{
   item.addEventListener('mouseleave',function () {
     item.style.display='none';
   })
+})
+document.addEventListener('mousemove', (event) => {
+  if (!event.target.closest('.dropdown')) {
+    dropdown.forEach((item)=>{
+      
+    })
+  }
 })
 btn.forEach((item) => {
   item.addEventListener('mouseover', function () {
@@ -46,62 +54,25 @@ btn.forEach((item) => {
 // hamIcon.addEventListener('click', function () {
 //   mobileMenu.classList.add('active');
 // })
+
 // document.getElementById('closemenu').addEventListener('click', function () {
 //   mobileMenu.classList.remove('active');
 // })
-// document.querySelector('.language-link').addEventListener('mouseenter', function () {
-//   dropdown.classList.remove('active');
-//   document.querySelector('.servicesArrow').classList.remove('opacity-100');
-//   document.querySelector('.servicesArrow').classList.add('opacity-0');
-// })
+
 // serviceLink.addEventListener('mouseenter', function () {
 //   dropdown.classList.add('active');
-//   document.querySelector('.servicesArrow').classList.add('opacity-100');
-//   document.querySelector('.servicesArrow').classList.remove('opacity-0');
 //   langDropdown.forEach((item) => {
 //     item.classList.remove('active');
 //   })
 // })
 
-// document.addEventListener('mousemove', (event) => {
-//   if (!event.target.closest('.dropdown') && !event.target.closest('.dropdownArea')) {
-//     dropdown.classList.remove('active');
-//     document.querySelector('.servicesArrow').classList.remove('opacity-100');
-//     document.querySelector('.servicesArrow').classList.add('opacity-0');
-//   }
-// })
-// banner
-const sliders = document.querySelectorAll(".animation");
-let indexs = {
-  itemIndex: 0,
-  newIndex: 0,
-};
-// window.addEventListener("click", () => {
-//   document.querySelector(".item").classList.toggle("active");
-// });
-
-$(document).ready(function () {
-  setTimeout(() => {
-    sliders[0].classList.add("active");
-  }, 1);
-  const owl = $(".owl-carousel");
-  owl.owlCarousel({
-    items: 1,
-    nav: true,
-    loop: true,
-    dots: true,
-    autoplay: true,
-  });
-  owl.on("changed.owl.carousel", (e) => {
-    sliders.forEach((element) => {
-      element.classList.remove("active");
-    });
-    sliders[e.page.index].classList.add("active");
-  });
-});
 
 // swiper
-
+var banner = new Swiper(".banner", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  // autoplay: true,
+});
 var category = new Swiper(".category", {
   slidesPerView: 1.3,
   spaceBetween: 20,

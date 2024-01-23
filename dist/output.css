@@ -961,6 +961,18 @@ video {
   grid-column: span 9 / span 9;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-7 {
+  grid-column: span 7 / span 7;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1805,6 +1817,10 @@ video {
   border-top-right-radius: 0px;
 }
 
+.rounded-br-\[118px\] {
+  border-bottom-right-radius: 118px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -2315,10 +2331,6 @@ video {
 
 .opacity-0 {
   opacity: 0;
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .opacity-50 {
