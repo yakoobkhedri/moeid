@@ -70,7 +70,7 @@ btn.forEach((item) => {
 // swiper
 var banner = new Swiper(".banner", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 180,
   // autoplay: true,
 });
 var category = new Swiper(".category", {
