@@ -13,7 +13,7 @@
 <body class="max-w-[1536px] w-full mx-auto relative">
 
     <!-- shape -->
-    <div class="w-8/12 h-[903px] overflow-hidden -z-1 bg-secondary rounded-br-[250px] absolute top-0 left-0">
+    <div class="lg:w-8/12 w-full h-[903px] overflow-hidden -z-1 bg-secondary rounded-br-[250px] absolute top-0 left-0">
         <svg class="absolute left-[53px] top-[245px]" width="55" height="55" viewBox="0 0 55 55" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -30,9 +30,9 @@
         <img alt="shape" src="../img/Group 22.png" class="absolute bottom-[105px] right-16">
     </div>
     <div
-        class="rounded-br-[250px] rounded-tr-[17px] w-8/12 h-[733px] bg-[#c9ccd1] rotate-[5deg] absolute top-0 left-3 -z-2">
+        class="rounded-br-[250px] hidden xl:block rounded-tr-[17px] w-8/12 h-[733px] bg-[#c9ccd1] rotate-[5deg] absolute top-0 left-3 -z-2">
     </div>
-    <div class="rounded-br-[250px] rounded-tr-[17px] w-8/12 h-[733px] bg-[#8F96A4] rotate-3 absolute top-0 left-0 -z-2">
+    <div class="rounded-br-[250px] hidden xl:block rounded-tr-[17px] w-8/12 h-[733px] bg-[#8F96A4] rotate-3 absolute top-0 left-0 -z-2">
     </div>
 
     <!-- contact modal -->
@@ -678,25 +678,25 @@
         <!-- banner -->
         <section class="mt-12">
             <div class="max-w-content mx-auto">
-                <div class="grid grid-cols-12 relative">
-                    <div class="col-span-3 pr-5">
+                <div class="grid lg:grid-cols-12 grid-cols-1 lg:px-5 xl:px-0 relative">
+                    <div class="lg:col-span-4 xl:col-span-3 lg:pr-5 order-last lg:order-first">
                         <h1 class="text-[47px] font-rokh font-black text-secondary">
                             <span class="text-orange">معید</span>
                             ،
                             <br>
                             توانمندی به<br> دانائیست.
                         </h1>
-                        <p class="opacity-50 mt-9 mb-14 text-lg">یکی از مهم ترین ملاک های انتخاب وکیل اعتماد و مسئولیت
+                        <p class="opacity-50 mt-9 mb-14 text-lg pl-4 xl:pl-0">یکی از مهم ترین ملاک های انتخاب وکیل اعتماد و مسئولیت
                             پذیری می باشد ، دغدغه کثیری از افراد جامعه که دارای چالش حقوقی و کیفری و ثبتی بوده و آنچه که
                             برای اشخاص حائز اهمیت است؛ مسئولیت پذیری وکیل می باشد</p>
                         <a
-                            class="w-[232px] h-[68px] flex items-center justify-center shadow-9 bg-orange rounded-[10px] text-white font-bold text-xl">دانلود
+                            class="w-[232px] h-[68px] flex items-center justify-center shadow-9 bg-orange rounded-[10px] text-white font-bold text-lg">دانلود
                             اپلیکیشن معید</a>
                     </div>
-                    <div class="col-span-9">
-                        <div class="relative bannerBox -left-[72px]">
-                            <div class="swiper banner pb-32 pr-24 pl-[68px]" dir="ltr">
-                                <div class="swiper-wrapper">
+                    <div class="lg:col-span-8 xl:col-span-9 order-first lg:order-last">
+                        <div class="relative bannerBox xl:-left-[72px]">
+                            <div class="swiper banner xl:pb-32 pr-24 h-[535px] xl:h-auto pl-[68px]" dir="ltr">
+                                <div class="swiper-wrapper h-full">
                                     <div class="swiper-slide relative">
                                         <!-- shape -->
                                         <img alt="img" src="../img/EDITION 1.png"
@@ -707,7 +707,7 @@
                                             class="absolute top-[183px] bottom-[230px] -left-[70px]">
                                         <!--  -->
                                         <img alt="img" src="../img/Rectangle 144.png"
-                                            class="rounded-[10px] rounded-br-[118px] w-full">
+                                            class="rounded-[10px] rounded-br-[118px] w-full h-full object-cover">
                                     </div>
                                     <div class="swiper-slide relative">
                                         <!-- shape -->
@@ -719,7 +719,7 @@
                                             class="absolute top-[183px] bottom-[230px] -left-[70px]">
                                         <!--  -->
                                         <img alt="img" src="../img/Rectangle 144.png"
-                                            class="rounded-[10px] rounded-br-[118px] w-full">
+                                            class="rounded-[10px] rounded-br-[118px] w-full h-full object-cover">
                                     </div>
                                 </div>
                                 <div
