@@ -96,7 +96,7 @@ input[type="number"] {
   background-position: center;
   background-repeat: no-repeat;
 }
-.lawyer .swiper-pagination-clickable .swiper-pagination-bullet{
+.swiper-pagination-clickable .swiper-pagination-bullet{
   background-color: #D9D9D9;
   width: 10px;
   height: 6px!important;
@@ -108,7 +108,11 @@ input[type="number"] {
   background-color: #1E2D48!important;
   width: 33px!important;
 }
-.lawyer2Box .swiper-pagination2-bullet .swiper-pagination2-bullet-active{
+.lawyer2Box .swiper-pagination2-bullet .swiper-pagination2-bullet-active,.swiper-pagination-bullet-active{
+  background-color: #F76B16!important;
+  width: 33px!important;
+}
+.swiper-pagination-bullet-active {
   background-color: #F76B16!important;
   width: 33px!important;
 }

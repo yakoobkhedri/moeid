@@ -6,28 +6,7 @@ let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
 let dropdown=Array.from(document.getElementsByClassName('dropdown'));
 let linkmenu=Array.from(document.getElementsByClassName('linkmenu'));
 
-dropdownBtn.forEach((item)=>{
-  item.addEventListener('mouseenter',function () {
-    item.querySelector('.dropdown').style.display='grid';
-    linkmenu.forEach((link)=>{
-      link.addEventListener('mouseenter', function () {
-        item.querySelector('.dropdown').style.display='none';
-      })
-    })
-  })
-})
-dropdown.forEach((item)=>{
-  item.addEventListener('mouseleave',function () {
-    item.style.display='none';
-  })
-})
-document.addEventListener('mousemove', (event) => {
-  if (!event.target.closest('.dropdown')) {
-    dropdown.forEach((item)=>{
-      
-    })
-  }
-})
+
 btn.forEach((item) => {
   item.addEventListener('mouseover', function () {
     btn.forEach((items) => {items.classList.remove('active')});
@@ -46,24 +25,8 @@ btn.forEach((item) => {
   })
 });
 
-// dropdownBtn.addEventListener('click', function () {
-//   this.querySelector('svg').classList.toggle('active');
-//   this.nextElementSibling.classList.toggle('active');
-// })
-
 // hamIcon.addEventListener('click', function () {
 //   mobileMenu.classList.add('active');
-// })
-
-// document.getElementById('closemenu').addEventListener('click', function () {
-//   mobileMenu.classList.remove('active');
-// })
-
-// serviceLink.addEventListener('mouseenter', function () {
-//   dropdown.classList.add('active');
-//   langDropdown.forEach((item) => {
-//     item.classList.remove('active');
-//   })
 // })
 
 
@@ -72,6 +35,14 @@ var banner = new Swiper(".banner", {
   slidesPerView: 1,
   spaceBetween: 180,
   // autoplay: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 var category = new Swiper(".category", {
   slidesPerView: 1.3,
