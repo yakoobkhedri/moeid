@@ -79,13 +79,36 @@ a {
 .bg-pinkgradient2{
   background: linear-gradient(360deg, #FFCEC7 0%, rgba(217, 217, 217, 0) 68.04%, rgba(255, 255, 255, 0) 68.04%);
 }
+.bg-blur{
+  background: #ffffffbd;
+  backdrop-filter: blur(11px);
+}
+#hamIcon.active svg:last-child{
+  display: block;
+}
+#hamIcon.active svg:first-child{
+  display: none;
+}
 .mobileMenu{
-  background-color: #fffffff5;
-  border: 1px solid #00000026;
+  box-shadow: 0px 0px 162px 0px #00000026;
   display: none;
 }
 .mobileMenu.active{
   display: block;
+}
+#dropdownBtn svg.active {
+  transform: rotate(0);
+}
+.dropdownContent {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+.dropdownContent.active {
+  max-height: 2000px;
+  margin-top: 32px;
+  overflow: hidden;
 }
 input[type="number"] {
   -moz-appearance: textfield;

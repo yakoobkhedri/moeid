@@ -2,9 +2,13 @@
 
 let btn = Array.from(document.querySelectorAll('.viza'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
-let dropdownBtn=Array.from(document.getElementsByClassName('dropdownBtn'));
-let dropdown=Array.from(document.getElementsByClassName('dropdown'));
-let linkmenu=Array.from(document.getElementsByClassName('linkmenu'));
+let dropdownBtn = document.getElementById('dropdownBtn');
+let hamIcon = document.getElementById('hamIcon');
+
+dropdownBtn.addEventListener('click', function () {
+  this.querySelector('svg').classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+})
 
 
 btn.forEach((item) => {
@@ -25,9 +29,10 @@ btn.forEach((item) => {
   })
 });
 
-// hamIcon.addEventListener('click', function () {
-//   mobileMenu.classList.add('active');
-// })
+hamIcon.addEventListener('click', function () {
+  hamIcon.classList.toggle('active');
+  document.querySelector('.mobileMenu').classList.toggle('active');
+})
 
 
 // swiper
