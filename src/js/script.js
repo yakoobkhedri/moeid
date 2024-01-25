@@ -89,11 +89,16 @@ var ourServices = new Swiper(".ourServices", {
 });
 var lawyer2 = new Swiper(".lawyer2", {
   loop: true,
-  spaceBetween: 48,
+  spaceBetween: 28,
   slidesPerView: 1,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 48,
+    },
   },
   pagination: {
     el: ".swiper-pagination2",
@@ -107,7 +112,7 @@ var lawyer2 = new Swiper(".lawyer2", {
 var lawyer = new Swiper(".lawyer", {
   loop: true,
   spaceBetween: 26,
-  slidesPerView: 1,
+  slidesPerView: 1.6,
   breakpoints: {
     768: {
       slidesPerView: 2,
