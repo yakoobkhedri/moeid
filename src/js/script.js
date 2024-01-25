@@ -117,7 +117,7 @@ var lawyer = new Swiper(".lawyer", {
     768: {
       slidesPerView: 2,
     },
-    1200: {
+    1300: {
       slidesPerView: 3,
     }
   },

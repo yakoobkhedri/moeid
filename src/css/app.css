@@ -73,6 +73,9 @@ a {
 .shadow-13{
   filter: drop-shadow(0px 0px 35px #0000000D);
 }
+.shadow-14{
+  box-shadow: 0px 0px 200px 0px #0000001A;
+}
 .bg-pinkgradient3{
   background: linear-gradient(90deg, #E3E9F2 0%, rgba(227, 232, 242, 0) 221.14%);
 }
