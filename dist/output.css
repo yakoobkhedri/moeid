@@ -982,8 +982,12 @@ video {
   top: 83px;
 }
 
-.right-\[152px\] {
-  right: 152px;
+.-top-7 {
+  top: -1.75rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
 }
 
 .-z-0 {
@@ -1252,6 +1256,18 @@ video {
   margin-top: 84px;
 }
 
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
+.-mt-4 {
+  margin-top: -1rem;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
 .block {
   display: block;
 }
@@ -1326,6 +1342,10 @@ video {
 
 .h-\[104px\] {
   height: 104px;
+}
+
+.h-\[117px\] {
+  height: 117px;
 }
 
 .h-\[137px\] {
@@ -1436,10 +1456,6 @@ video {
   height: 83px;
 }
 
-.h-\[863px\] {
-  height: 863px;
-}
-
 .h-\[903px\] {
   height: 903px;
 }
@@ -1454,10 +1470,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[117px\] {
-  height: 117px;
 }
 
 .max-h-\[601px\] {
@@ -1612,6 +1624,10 @@ video {
   width: 84%;
 }
 
+.w-\[88\%\] {
+  width: 88%;
+}
+
 .w-\[90px\] {
   width: 90px;
 }
@@ -1628,16 +1644,8 @@ video {
   width: 100%;
 }
 
-.w-\[94\%\] {
-  width: 94%;
-}
-
-.w-\[98\%\] {
-  width: 98%;
-}
-
-.w-\[88\%\] {
-  width: 88%;
+.w-\[210px\] {
+  width: 210px;
 }
 
 .max-w-\[1233px\] {
@@ -2977,12 +2985,33 @@ input[type="number"] {
     right: 4rem;
   }
 
+  .sm\:-right-\[22px\] {
+    right: -22px;
+  }
+
+  .sm\:left-auto {
+    left: auto;
+  }
+
+  .sm\:-top-11 {
+    top: -2.75rem;
+  }
+
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .sm\:ml-auto {
     margin-left: auto;
   }
 
   .sm\:mr-auto {
     margin-right: auto;
+  }
+
+  .sm\:-mt-10 {
+    margin-top: -2.5rem;
   }
 
   .sm\:h-9 {
@@ -3001,8 +3030,24 @@ input[type="number"] {
     width: 91px;
   }
 
+  .sm\:w-auto {
+    width: auto;
+  }
+
   .sm\:max-w-\[424px\] {
     max-width: 424px;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
 
   .sm\:rounded-\[22px\] {
@@ -3021,6 +3066,16 @@ input[type="number"] {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:leading-8 {
