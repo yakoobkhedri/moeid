@@ -706,10 +706,6 @@ video {
   top: -2.5rem;
 }
 
-.-top-11 {
-  top: -2.75rem;
-}
-
 .-top-14 {
   top: -3.5rem;
 }
@@ -736,6 +732,10 @@ video {
 
 .-top-5 {
   top: -1.25rem;
+}
+
+.-top-7 {
+  top: -1.75rem;
 }
 
 .-top-72 {
@@ -982,14 +982,6 @@ video {
   top: 83px;
 }
 
-.-top-7 {
-  top: -1.75rem;
-}
-
-.-right-10 {
-  right: -2.5rem;
-}
-
 .-z-0 {
   z-index: 0;
 }
@@ -1082,10 +1074,6 @@ video {
 
 .-mr-\[370px\] {
   margin-right: -370px;
-}
-
-.-mt-10 {
-  margin-top: -2.5rem;
 }
 
 .-mt-16 {
@@ -1248,6 +1236,10 @@ video {
   margin-top: 340px;
 }
 
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
 .mt-\[60px\] {
   margin-top: 60px;
 }
@@ -1256,16 +1248,16 @@ video {
   margin-top: 84px;
 }
 
-.-mt-5 {
-  margin-top: -1.25rem;
+.mt-\[28px\] {
+  margin-top: 28px;
 }
 
-.-mt-4 {
-  margin-top: -1rem;
+.mt-\[161px\] {
+  margin-top: 161px;
 }
 
-.mt-\[50px\] {
-  margin-top: 50px;
+.mt-\[200px\] {
+  margin-top: 200px;
 }
 
 .block {
@@ -1472,6 +1464,22 @@ video {
   height: 100%;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[96px\] {
+  height: 96px;
+}
+
+.h-\[122px\] {
+  height: 122px;
+}
+
+.h-\[1034px\] {
+  height: 1034px;
+}
+
 .max-h-\[601px\] {
   max-height: 601px;
 }
@@ -1568,6 +1576,10 @@ video {
   width: 196px;
 }
 
+.w-\[210px\] {
+  width: 210px;
+}
+
 .w-\[230px\] {
   width: 230px;
 }
@@ -1642,10 +1654,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[210px\] {
-  width: 210px;
 }
 
 .max-w-\[1233px\] {
@@ -1855,6 +1863,10 @@ video {
   gap: 26px;
 }
 
+.gap-\[30px\] {
+  gap: 30px;
+}
+
 .gap-x-11 {
   -moz-column-gap: 2.75rem;
        column-gap: 2.75rem;
@@ -1875,6 +1887,10 @@ video {
 
 .gap-y-\[21px\] {
   row-gap: 21px;
+}
+
+.gap-y-\[30px\] {
+  row-gap: 30px;
 }
 
 .overflow-hidden {
@@ -2394,6 +2410,10 @@ video {
   padding-top: 34px;
 }
 
+.pt-\[90px\] {
+  padding-top: 90px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2446,10 +2466,6 @@ video {
 
 .text-\[47px\] {
   font-size: 47px;
-}
-
-.text-\[51px\] {
-  font-size: 51px;
 }
 
 .text-base {
@@ -2973,6 +2989,14 @@ input[type="number"] {
 }
 
 @media (min-width: 640px) {
+  .sm\:-right-\[22px\] {
+    right: -22px;
+  }
+
+  .sm\:-top-11 {
+    top: -2.75rem;
+  }
+
   .sm\:-top-\[135px\] {
     top: -135px;
   }
@@ -2981,25 +3005,29 @@ input[type="number"] {
     left: 4rem;
   }
 
-  .sm\:right-16 {
-    right: 4rem;
-  }
-
-  .sm\:-right-\[22px\] {
-    right: -22px;
-  }
-
   .sm\:left-auto {
     left: auto;
   }
 
-  .sm\:-top-11 {
-    top: -2.75rem;
+  .sm\:right-16 {
+    right: 4rem;
+  }
+
+  .sm\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .sm\:col-span-8 {
+    grid-column: span 8 / span 8;
   }
 
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .sm\:-mt-10 {
+    margin-top: -2.5rem;
   }
 
   .sm\:ml-auto {
@@ -3010,8 +3038,20 @@ input[type="number"] {
     margin-right: auto;
   }
 
-  .sm\:-mt-10 {
-    margin-top: -2.5rem;
+  .sm\:mt-\[84px\] {
+    margin-top: 84px;
+  }
+
+  .sm\:mt-\[330px\] {
+    margin-top: 330px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-9 {
@@ -3042,10 +3082,6 @@ input[type="number"] {
     justify-content: flex-start;
   }
 
-  .sm\:justify-end {
-    justify-content: flex-end;
-  }
-
   .sm\:gap-3 {
     gap: 0.75rem;
   }
@@ -3054,8 +3090,18 @@ input[type="number"] {
     border-radius: 22px;
   }
 
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:text-\[27px\] {
     font-size: 27px;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:text-lg {
@@ -3068,16 +3114,6 @@ input[type="number"] {
     line-height: 1.25rem;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .sm\:leading-8 {
     line-height: 2rem;
   }
@@ -3086,6 +3122,14 @@ input[type="number"] {
 @media (min-width: 768px) {
   .md\:-top-10 {
     top: -2.5rem;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-9 {
+    grid-column: span 9 / span 9;
   }
 
   .md\:mt-64 {
@@ -3188,12 +3232,20 @@ input[type="number"] {
     padding-right: 1.25rem;
   }
 
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
   .md\:pt-14 {
     padding-top: 3.5rem;
   }
 
   .md\:text-center {
     text-align: center;
+  }
+
+  .md\:text-right {
+    text-align: right;
   }
 
   .md\:text-3xl {
@@ -3203,6 +3255,10 @@ input[type="number"] {
 
   .md\:text-\[25px\] {
     font-size: 25px;
+  }
+
+  .md\:text-\[51px\] {
+    font-size: 51px;
   }
 
   .md\:text-base {
