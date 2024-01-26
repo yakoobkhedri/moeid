@@ -1526,15 +1526,15 @@
         <!-- statistics -->
         <section class="mt-8">
             <div class="max-w-content mx-auto px-5">
-                <div class="flex items-center relative">
+                <div class="flex flex-col lg:flex-row items-center relative">
                     <!-- shape -->
-                    <div class="bg-[#E3E8F2] rounded-[40px] h-[246px] absolute -left-4 top-8 w-11/12 z-1"></div>
-                    <div class="bg-[#f9fafc] rounded-[40px] h-[246px] absolute left-12 top-4 w-7/12 rotate-3 -z-0">
+                    <div class="bg-[#E3E8F2] rounded-[40px] h-[246px] absolute -left-4 top-8 w-11/12 z-1 hidden lg:block"></div>
+                    <div class="bg-[#f9fafc] rounded-[40px] h-[246px] absolute left-12 top-4 w-7/12 rotate-3 -z-0 hidden lg:block">
                     </div>
-                    <div class="bg-[#F3F4F7] rounded-[40px] h-[246px] absolute left-1 top-8 w-11/12 rotate-2 -z-0">
+                    <div class="bg-[#F3F4F7] rounded-[40px] h-[246px] absolute left-1 top-8 w-11/12 rotate-2 -z-0 hidden lg:block">
                     </div>
                     <div
-                        class="bg-white pr-7 rounded-[38px] rounded-tr-none w-[424px] h-[104px] absolute right-[51px] top-0 z-10 shadow-9 flex items-center">
+                        class="bg-white hidden lg:flex pr-7 rounded-[38px] rounded-tr-none w-[424px] h-[104px] absolute right-[51px] top-0 z-10 shadow-9 items-center">
                         <div class="relative">
                             <h1 class="font-rokh font-black text-secondary text-xl leading-7">
                                 با آمار حرفه ای و تیم قدرتمند ما<br>
@@ -1545,100 +1545,116 @@
                     </div>
                     <!--  -->
                     <div
-                        class="rounded-[40px] overflow-hidden relative bg-secondary z-2 flex-shrink-0 flex-grow flex items-center gap-[73px] pt-[118px] pr-[51px] pb-10 text-center">
+                        class="rounded-[40px] overflow-hidden relative bg-secondary z-2 flex-shrink-0 flex-grow flex-col lg:flex-row w-full flex items-center gap-11 lg:gap-3 xl:gap-[73px] gap-y-1 md:gap-y-0 pt-12 lg:pt-[118px] px-5 lg:px-[51px] pb-10 text-center">
                         <!-- shape -->
-                        <div class="bg-[#E3E8F2] rounded-[40px] h-[246px] absolute -left-2 top-0 w-32 z-1"></div>
-                        <img alt="shape" src="../img/Pattern (4).png" class="absolute bottom-0 right-0 -z-0">
-                        <img alt="shape" src="../img/Pattern(4).png" class="absolute top-0 -left-20 -z-0">
+                        <div class="bg-[#E3E8F2] rounded-[40px] h-[246px] absolute -left-2 top-0 w-44 z-1 hidden lg:block"></div>
+                        <img alt="shape" src="../img/Pattern (4).png" class="absolute bottom-0 right-0 -z-0 hidden md:block">
+                        <img alt="shape" src="../img/Pattern(4).png" class="absolute top-0 -left-20 -z-0 hidden md:block">
+                        <img alt="shape" src="../img/Group.png" class="absolute left-0 inset-y-0 md:hidden -z-0 h-full">
                         <!--  -->
-                        <div>
-                            <div
-                                class="w-[138px] h-[104px] bg-white relative flex items-center justify-center rounded-[22px]">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.5">
-                                        <path opacity="0.4"
-                                            d="M37.3183 18.4231C36.4357 18.4231 35.2666 18.4036 33.811 18.4036C30.2611 18.4036 27.3422 15.4654 27.3422 11.8822V5.5954C27.3422 5.10082 26.9474 4.69812 26.4576 4.69812H16.1176C11.2922 4.69812 7.39191 8.65865 7.39191 13.5125V34.5761C7.39191 39.6684 11.478 43.7951 16.5202 43.7951H31.918C36.726 43.7951 40.6244 39.86 40.6244 35.0022V19.3028C40.6244 18.8063 40.2314 18.4055 39.7398 18.4075C38.9133 18.4133 37.9222 18.4231 37.3183 18.4231Z"
-                                            fill="#1E2D48" />
-                                        <path opacity="0.4"
-                                            d="M31.9921 5.80716C31.4076 5.1992 30.3872 5.61754 30.3872 6.46008V11.615C30.3872 13.7771 32.1681 15.556 34.3301 15.556C35.6927 15.5716 37.585 15.5755 39.1919 15.5716C40.0148 15.5697 40.4332 14.5864 39.8624 13.9921C37.8 11.8476 34.1073 8.00441 31.9921 5.80716Z"
-                                            fill="#1E2D48" />
-                                        <path
-                                            d="M28.7356 29.9016C29.539 29.9016 30.1919 30.5545 30.1919 31.3579C30.1919 32.1614 29.539 32.8124 28.7356 32.8124H18.0934C17.2899 32.8124 16.639 32.1614 16.639 31.3579C16.639 30.5545 17.2899 29.9016 18.0934 29.9016H28.7356ZM24.7103 20.1387C25.5138 20.1387 26.1667 20.7916 26.1667 21.595C26.1667 22.3985 25.5138 23.0494 24.7103 23.0494H18.0932C17.2897 23.0494 16.6388 22.3985 16.6388 21.595C16.6388 20.7916 17.2897 20.1387 18.0932 20.1387H24.7103Z"
-                                            fill="#1E2D48" />
-                                    </g>
-                                </svg>
-                                <p
-                                    class="w-[91px] h-9 rounded-[28px] bg-orange text-white font-black text-[27px] absolute inset-x-0 mx-auto -bottom-4 shadow-8">
-                                    ۱۰۲۴</p>
+                        <div class="bg-white mb-8 lg:hidden mx-auto text-center rounded-[38px] rounded-tr-none w-full max-w-[313px] h-[76px] shadow-10 flex items-center justify-center">
+                            <div class="relative">
+                                <h1 class="font-rokh font-black text-secondary leading-7">
+                                    <span class="font-light">با آمار حرفه ای و تیم قدرتمند ما</span>
+                                    <br>
+                                    دیکر نگران منابع حقوقی خود نباشید
+                                </h1>
                             </div>
-                            <p class="font-semibold mt-9 text-white">سوال حقوقی</p>
                         </div>
-                        <div>
-                            <div
-                                class="w-[138px] h-[104px] bg-white relative flex items-center justify-center rounded-[22px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
-                                    fill="none">
-                                    <g opacity="0.5">
-                                        <path opacity="0.4"
-                                            d="M33.8469 31.4942H22.7154C21.6294 31.4942 20.7461 32.3915 20.7461 33.4947C20.7461 34.6001 21.6294 35.4953 22.7154 35.4953H33.8469C34.9329 35.4953 35.8163 34.6001 35.8163 33.4947C35.8163 32.3915 34.9329 31.4942 33.8469 31.4942Z"
-                                            fill="#1E2D48" />
-                                        <path
-                                            d="M14.9168 7.93946L25.4649 16.4628C25.7194 16.6666 25.7628 17.0407 25.5642 17.3012L13.0592 33.5956C12.2731 34.6022 11.1146 35.1716 9.87344 35.1927L3.04686 35.2768C2.68277 35.2809 2.3642 35.0287 2.28145 34.6673L0.729957 27.9218C0.461031 26.6819 0.729957 25.4001 1.51605 24.4124L14.0832 8.04033C14.2859 7.77765 14.6603 7.73142 14.9168 7.93946Z"
-                                            fill="#1E2D48" />
-                                        <path opacity="0.4"
-                                            d="M30.1876 11.3831L28.1541 13.9216C27.9493 14.18 27.581 14.2221 27.3266 14.0161C24.8545 12.0156 18.5244 6.88184 16.7682 5.45919C16.5116 5.24905 16.4765 4.875 16.6833 4.61442L18.6444 2.17889C20.4235 -0.111651 23.5265 -0.321792 26.0295 1.67455L28.905 3.96509C30.0841 4.88971 30.8702 6.10853 31.1391 7.39039C31.4494 8.80043 31.1184 10.1853 30.1876 11.3831Z"
-                                            fill="#1E2D48" />
-                                    </g>
-                                </svg>
-                                <p
-                                    class="w-[91px] h-9 rounded-[28px] bg-orange text-white font-black text-[27px] absolute inset-x-0 mx-auto -bottom-4 shadow-8">
-                                    56</p>
+                        <div class="flex flex-col md:flex-row items-center gap-11 lg:gap-3 xl:gap-[73px] gap-y-1 md:gap-y-0">
+                            <div class="flex items-center gap-11 lg:gap-3 xl:gap-[73px] gap-y-1 md:gap-y-0">
+                                <div>
+                                    <div
+                                        class="sm:w-[138px] w-[110px] sm:h-[104px] h-[83px] bg-white relative flex items-center justify-center rounded-[18px] sm:rounded-[22px]">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                                <path opacity="0.4"
+                                                    d="M37.3183 18.4231C36.4357 18.4231 35.2666 18.4036 33.811 18.4036C30.2611 18.4036 27.3422 15.4654 27.3422 11.8822V5.5954C27.3422 5.10082 26.9474 4.69812 26.4576 4.69812H16.1176C11.2922 4.69812 7.39191 8.65865 7.39191 13.5125V34.5761C7.39191 39.6684 11.478 43.7951 16.5202 43.7951H31.918C36.726 43.7951 40.6244 39.86 40.6244 35.0022V19.3028C40.6244 18.8063 40.2314 18.4055 39.7398 18.4075C38.9133 18.4133 37.9222 18.4231 37.3183 18.4231Z"
+                                                    fill="#1E2D48" />
+                                                <path opacity="0.4"
+                                                    d="M31.9921 5.80716C31.4076 5.1992 30.3872 5.61754 30.3872 6.46008V11.615C30.3872 13.7771 32.1681 15.556 34.3301 15.556C35.6927 15.5716 37.585 15.5755 39.1919 15.5716C40.0148 15.5697 40.4332 14.5864 39.8624 13.9921C37.8 11.8476 34.1073 8.00441 31.9921 5.80716Z"
+                                                    fill="#1E2D48" />
+                                                <path
+                                                    d="M28.7356 29.9016C29.539 29.9016 30.1919 30.5545 30.1919 31.3579C30.1919 32.1614 29.539 32.8124 28.7356 32.8124H18.0934C17.2899 32.8124 16.639 32.1614 16.639 31.3579C16.639 30.5545 17.2899 29.9016 18.0934 29.9016H28.7356ZM24.7103 20.1387C25.5138 20.1387 26.1667 20.7916 26.1667 21.595C26.1667 22.3985 25.5138 23.0494 24.7103 23.0494H18.0932C17.2897 23.0494 16.6388 22.3985 16.6388 21.595C16.6388 20.7916 17.2897 20.1387 18.0932 20.1387H24.7103Z"
+                                                    fill="#1E2D48" />
+                                            </g>
+                                        </svg>
+                                        <p
+                                            class="sm:w-[91px] w-[72px] sm:h-9 h-[29px] rounded-[28px] bg-orange text-white font-black text-[22px] sm:text-[27px] absolute inset-x-0 mx-auto -bottom-4 shadow-8">
+                                            ۱۰۲۴</p>
+                                    </div>
+                                    <p class="font-semibold mt-9 text-white">سوال حقوقی</p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="sm:w-[138px] w-[110px] sm:h-[104px] h-[83px] bg-white relative flex items-center justify-center rounded-[18px] sm:rounded-[22px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                            fill="none">
+                                            <g opacity="0.5">
+                                                <path opacity="0.4"
+                                                    d="M33.8469 31.4942H22.7154C21.6294 31.4942 20.7461 32.3915 20.7461 33.4947C20.7461 34.6001 21.6294 35.4953 22.7154 35.4953H33.8469C34.9329 35.4953 35.8163 34.6001 35.8163 33.4947C35.8163 32.3915 34.9329 31.4942 33.8469 31.4942Z"
+                                                    fill="#1E2D48" />
+                                                <path
+                                                    d="M14.9168 7.93946L25.4649 16.4628C25.7194 16.6666 25.7628 17.0407 25.5642 17.3012L13.0592 33.5956C12.2731 34.6022 11.1146 35.1716 9.87344 35.1927L3.04686 35.2768C2.68277 35.2809 2.3642 35.0287 2.28145 34.6673L0.729957 27.9218C0.461031 26.6819 0.729957 25.4001 1.51605 24.4124L14.0832 8.04033C14.2859 7.77765 14.6603 7.73142 14.9168 7.93946Z"
+                                                    fill="#1E2D48" />
+                                                <path opacity="0.4"
+                                                    d="M30.1876 11.3831L28.1541 13.9216C27.9493 14.18 27.581 14.2221 27.3266 14.0161C24.8545 12.0156 18.5244 6.88184 16.7682 5.45919C16.5116 5.24905 16.4765 4.875 16.6833 4.61442L18.6444 2.17889C20.4235 -0.111651 23.5265 -0.321792 26.0295 1.67455L28.905 3.96509C30.0841 4.88971 30.8702 6.10853 31.1391 7.39039C31.4494 8.80043 31.1184 10.1853 30.1876 11.3831Z"
+                                                    fill="#1E2D48" />
+                                            </g>
+                                        </svg>
+                                        <p
+                                            class="sm:w-[91px] w-[72px] sm:h-9 h-[29px] rounded-[28px] bg-orange text-white font-black text-[22px] sm:text-[27px] absolute inset-x-0 mx-auto -bottom-4 shadow-8">
+                                            56</p>
+                                    </div>
+                                    <p class="font-semibold mt-9 text-white">آزمون مدون</p>
+                                </div>
                             </div>
-                            <p class="font-semibold mt-9 text-white">آزمون مدون</p>
-                        </div>
-                        <div>
-                            <div
-                                class="w-[138px] h-[104px] bg-white relative flex items-center justify-center rounded-[22px]">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.5">
-                                        <path opacity="0.4"
-                                            d="M42.365 15.3374C41.5459 14.8214 40.5392 14.7758 39.681 15.2124L36.7839 16.675C35.7126 17.2149 35.048 18.3064 35.048 19.521V30.9246C35.048 32.1392 35.7126 33.2288 36.7839 33.7725L39.679 35.2332C40.072 35.4356 40.4923 35.5329 40.9126 35.5329C41.4169 35.5329 41.9174 35.39 42.365 35.1102C43.1841 34.5962 43.6728 33.7051 43.6728 32.7286V17.7209C43.6728 16.7445 43.1841 15.8534 42.365 15.3374Z"
-                                            fill="#1E2D48" />
-                                        <path
-                                            d="M23.9391 39.8854H12.6165C7.88176 39.8854 4.57607 36.6207 4.57607 31.9469V18.5011C4.57607 13.8253 7.88176 10.5626 12.6165 10.5626H23.9391C28.6737 10.5626 31.9794 13.8253 31.9794 18.5011V31.9469C31.9794 36.6207 28.6737 39.8854 23.9391 39.8854Z"
-                                            fill="#1E2D48" />
-                                    </g>
-                                </svg>
-                                <p
-                                    class="w-[91px] h-9 rounded-[28px] bg-orange text-white font-black text-[27px] absolute inset-x-0 mx-auto -bottom-4 shadow-8">
-                                    114</p>
+                            <div class="flex items-center gap-11 lg:gap-3 xl:gap-[73px] gap-y-1 md:gap-y-0">
+                                <div>
+                                    <div
+                                        class="sm:w-[138px] w-[110px] sm:h-[104px] h-[83px] bg-white relative flex items-center justify-center rounded-[18px] sm:rounded-[22px]">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                                <path opacity="0.4"
+                                                    d="M42.365 15.3374C41.5459 14.8214 40.5392 14.7758 39.681 15.2124L36.7839 16.675C35.7126 17.2149 35.048 18.3064 35.048 19.521V30.9246C35.048 32.1392 35.7126 33.2288 36.7839 33.7725L39.679 35.2332C40.072 35.4356 40.4923 35.5329 40.9126 35.5329C41.4169 35.5329 41.9174 35.39 42.365 35.1102C43.1841 34.5962 43.6728 33.7051 43.6728 32.7286V17.7209C43.6728 16.7445 43.1841 15.8534 42.365 15.3374Z"
+                                                    fill="#1E2D48" />
+                                                <path
+                                                    d="M23.9391 39.8854H12.6165C7.88176 39.8854 4.57607 36.6207 4.57607 31.9469V18.5011C4.57607 13.8253 7.88176 10.5626 12.6165 10.5626H23.9391C28.6737 10.5626 31.9794 13.8253 31.9794 18.5011V31.9469C31.9794 36.6207 28.6737 39.8854 23.9391 39.8854Z"
+                                                    fill="#1E2D48" />
+                                            </g>
+                                        </svg>
+                                        <p
+                                            class="sm:w-[91px] w-[72px] sm:h-9 h-[29px] rounded-[28px] bg-orange text-white font-black text-[22px] sm:text-[27px] absolute inset-x-0 mx-auto -bottom-4 shadow-8">
+                                            114</p>
+                                    </div>
+                                    <p class="font-semibold mt-9 text-white">دوره آموزشی</p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="sm:w-[138px] w-[110px] sm:h-[104px] h-[83px] bg-white relative flex items-center justify-center rounded-[18px] sm:rounded-[22px]">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                                <path opacity="0.4"
+                                                    d="M43.2307 24.2463C43.2307 35.0448 34.4788 43.7948 23.6822 43.7948C12.8855 43.7948 4.13368 35.0448 4.13368 24.2463C4.13368 13.4516 12.8855 4.69775 23.6822 4.69775C34.4788 4.69775 43.2307 13.4516 43.2307 24.2463Z"
+                                                    fill="#1E2D48" />
+                                                <path
+                                                    d="M30.6681 31.7031C30.412 31.7031 30.154 31.6366 29.9175 31.4978L22.2427 26.9196C21.8009 26.6537 21.5292 26.1748 21.5292 25.6587V15.7926C21.5292 14.9832 22.186 14.3264 22.9953 14.3264C23.8047 14.3264 24.4615 14.9832 24.4615 15.7926V24.8259L31.4207 28.9761C32.1147 29.3924 32.3434 30.2917 31.929 30.9876C31.6534 31.447 31.1666 31.7031 30.6681 31.7031Z"
+                                                    fill="#1E2D48" />
+                                            </g>
+                                        </svg>
+                                        <p
+                                            class="sm:w-[91px] w-[72px] sm:h-9 h-[29px] rounded-[28px] bg-orange text-white font-black text-[22px] sm:text-[27px] absolute inset-x-0 mx-auto -bottom-4 shadow-8">
+                                            ۲۱۸۹۷۶</p>
+                                    </div>
+                                    <p class="font-semibold mt-9 text-white">ساعت آموزش</p>
+                                </div>
                             </div>
-                            <p class="font-semibold mt-9 text-white">دوره آموزشی</p>
-                        </div>
-                        <div>
-                            <div
-                                class="w-[138px] h-[104px] bg-white relative flex items-center justify-center rounded-[22px]">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.5">
-                                        <path opacity="0.4"
-                                            d="M43.2307 24.2463C43.2307 35.0448 34.4788 43.7948 23.6822 43.7948C12.8855 43.7948 4.13368 35.0448 4.13368 24.2463C4.13368 13.4516 12.8855 4.69775 23.6822 4.69775C34.4788 4.69775 43.2307 13.4516 43.2307 24.2463Z"
-                                            fill="#1E2D48" />
-                                        <path
-                                            d="M30.6681 31.7031C30.412 31.7031 30.154 31.6366 29.9175 31.4978L22.2427 26.9196C21.8009 26.6537 21.5292 26.1748 21.5292 25.6587V15.7926C21.5292 14.9832 22.186 14.3264 22.9953 14.3264C23.8047 14.3264 24.4615 14.9832 24.4615 15.7926V24.8259L31.4207 28.9761C32.1147 29.3924 32.3434 30.2917 31.929 30.9876C31.6534 31.447 31.1666 31.7031 30.6681 31.7031Z"
-                                            fill="#1E2D48" />
-                                    </g>
-                                </svg>
-                                <p
-                                    class="w-[91px] h-9 rounded-[28px] bg-orange text-white font-black text-[27px] absolute inset-x-0 mx-auto -bottom-4 shadow-8">
-                                    ۲۱۸۹۷۶</p>
-                            </div>
-                            <p class="font-semibold mt-9 text-white">ساعت آموزش</p>
                         </div>
                     </div>
-                    <img alt="img" src="../img/Group_2228-removebg-preview.png" class="-mr-[296px] z-2 w-[375px]">
+                    <img alt="img" src="../img/Group_2228-removebg-preview.png" class="-mr-[370px] z-2 w-[375px]">
                 </div>
             </div>
         </section>
