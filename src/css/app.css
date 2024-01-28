@@ -130,7 +130,7 @@ input[type="number"] {
   transition: all .4s;
   opacity: 1;
 }
-.lawyer .swiper-pagination-bullet-active{
+.lawyer .swiper-pagination-bullet-active,.customer .swiper-pagination-bullet-active{
   background-color: #1E2D48!important;
   width: 33px!important;
 }
