@@ -65,7 +65,7 @@ var category = new Swiper(".category", {
 });
 var ourServices = new Swiper(".ourServices", {
   loop: true,
-  spaceBetween: 36,
+  spaceBetween: 41,
   slidesPerView: 1,
   breakpoints: {
     576: {
