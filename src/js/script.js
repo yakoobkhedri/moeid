@@ -17,8 +17,8 @@ dropdownBtn.forEach((item)=>{
 btn.forEach((item) => {
   item.addEventListener('mouseover', function () {
     btn.forEach((items) => {items.classList.remove('active')});
-    let tabId = item.dataset.id;
     item.classList.add('active');
+    let tabId = item.dataset.id;
     tabContent.forEach((content) => {
       let contentId = content.dataset.id;
       if (tabId === contentId) {

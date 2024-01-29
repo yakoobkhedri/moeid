@@ -30,6 +30,7 @@ html{
 body {
   font-family: yekanBakh-Bold;
   user-select: none;
+  overflow-x:hidden;
 }
 a {
   cursor: pointer;
@@ -148,6 +149,9 @@ input[type="number"] {
 .viza.active{
   background-color: #E3E8F2;
   color: #1E2D48;
+}
+.viza img{
+  opacity: 0;
 }
 .viza.active img{
   opacity: 1;
