@@ -99,7 +99,7 @@ a {
 .mobileMenu.active{
   display: block;
 }
-#dropdownBtn svg.active {
+.dropdownBtn .arrowSvg.active {
   transform: rotate(0);
 }
 .dropdownContent {
@@ -110,7 +110,7 @@ a {
 }
 .dropdownContent.active {
   max-height: 2000px;
-  margin-top: 32px;
+  margin-top: 18px;
   overflow: hidden;
 }
 input[type="number"] {

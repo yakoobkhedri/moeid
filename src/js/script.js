@@ -2,12 +2,15 @@
 
 let btn = Array.from(document.querySelectorAll('.viza'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
-let dropdownBtn = document.getElementById('dropdownBtn');
+let dropdownBtn =Array.from(document.getElementsByClassName('dropdownBtn'))
 let hamIcon = document.getElementById('hamIcon');
 
-dropdownBtn.addEventListener('click', function () {
-  this.querySelector('svg').classList.toggle('active');
-  this.nextElementSibling.classList.toggle('active');
+
+dropdownBtn.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.querySelector('.arrowSvg').classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
 })
 
 

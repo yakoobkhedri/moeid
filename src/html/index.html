@@ -592,7 +592,7 @@
         </div>
         <!-- mobile menu -->
         <div
-            class="rounded-3xl p-[22px] mobileMenu top-[143px] absolute lg:hidden bg-white -mt-2 z-40 text-secondary text-sm font-bold left-5 right-5">
+            class="rounded-3xl mobileMenu top-[143px] absolute lg:hidden bg-white -mt-2 z-40 text-black text-sm font-bold left-5 right-5">
             <!-- arrow -->
             <svg class="-top-2 left-8 absolute" xmlns="http://www.w3.org/2000/svg" width="33" height="9"
                 viewBox="0 0 33 9" fill="white">
@@ -603,80 +603,447 @@
             <!-- shape -->
             <img alt="shape" src="../img/Pattern (7).png" class="absolute top-0 left-0 -z-1">
             <!-- menu -->
-            <ul>
+            <ul class="p-[22px]">
                 <li class="mb-8">
                     <a>صفحه اصلی</a>
                 </li>
                 <li class="mb-8">
-                    <a class="flex items-center justify-between" id="dropdownBtn">
-                        <p>خرید رنگ</p>
-                        <svg class="rotate-180 transition-all" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                    <a class="flex items-center justify-between dropdownBtn">
+                        <p>ویزا</p>
+                        <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
                             viewBox="0 0 12 7" fill="none">
                             <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
                                 stroke-linecap="square" />
                         </svg>
                     </a>
                     <ul
-                        class="font-light text-black dropdownContent opacity-60 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed text-sm">
-                        <li class="mb-8 relative -right-2 ltr:-left-2 ltr:right-0">
-                            <a class="flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
-                                    fill="none">
-                                    <circle cx="7.5" cy="8" r="3.5" fill="white" />
-                                    <circle cx="7.5" cy="8" r="5.5" stroke="black" stroke-opacity="0.1"
-                                        stroke-width="4" />
+                        class="font-light text-black dropdownContent text-sm">
+                        <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black dropdownBtn">
+                                <div class="flex items-center gap-3 relative -right-2 -mr-2">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7.5" cy="8" r="5.5" fill="white" stroke="#F76B16" stroke-width="4"/>
+                                    </svg>
+                                    <p>توریستی</p>
+                                </div>
+                                <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                                    viewBox="0 0 12 7" fill="none">
+                                    <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                        stroke-linecap="square" />
                                 </svg>
-                                <p>لورم ایپسوم متن ساختگی</p>
                             </a>
+                            <ul
+                                class="font-light text-black dropdownContent text-sm">
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="mb-8 relative -right-2 ltr:-left-2 ltr:right-0">
-                            <a class="flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
-                                    fill="none">
-                                    <circle cx="7.5" cy="8" r="3.5" fill="white" />
-                                    <circle cx="7.5" cy="8" r="5.5" stroke="black" stroke-opacity="0.1"
-                                        stroke-width="4" />
+                        <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black dropdownBtn">
+                                <div class="flex items-center gap-3 relative -right-2 -mr-2">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7.5" cy="8" r="5.5" fill="white" stroke="#F76B16" stroke-width="4"/>
+                                    </svg>
+                                    <p>تحصیلی</p>
+                                </div>
+                                <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                                    viewBox="0 0 12 7" fill="none">
+                                    <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                        stroke-linecap="square" />
                                 </svg>
-                                <p>لورم ایپسوم متن ساختگی</p>
                             </a>
-                        </li>
-                        <li class="mb-8 relative -right-2 ltr:-left-2 ltr:right-0">
-                            <a class="flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
-                                    fill="none">
-                                    <circle cx="7.5" cy="8" r="3.5" fill="white" />
-                                    <circle cx="7.5" cy="8" r="5.5" stroke="black" stroke-opacity="0.1"
-                                        stroke-width="4" />
-                                </svg>
-                                <p>لورم ایپسوم متن ساختگی</p>
-                            </a>
-                        </li>
-                        <li class="mb-8 relative -right-2 ltr:-left-2 ltr:right-0">
-                            <a class="flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
-                                    fill="none">
-                                    <circle cx="7.5" cy="8" r="3.5" fill="white" />
-                                    <circle cx="7.5" cy="8" r="5.5" stroke="black" stroke-opacity="0.1"
-                                        stroke-width="4" />
-                                </svg>
-                                <p>لورم ایپسوم متن ساختگی</p>
-                            </a>
-                        </li>
-                        <li class="relative -right-2 ltr:-left-2 ltr:right-0">
-                            <a class="flex items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
-                                    fill="none">
-                                    <circle cx="7.5" cy="8" r="3.5" fill="white" />
-                                    <circle cx="7.5" cy="8" r="5.5" stroke="black" stroke-opacity="0.1"
-                                        stroke-width="4" />
-                                </svg>
-                                <p>لورم ایپسوم متن ساختگی</p>
-                            </a>
+                            <ul
+                                class="font-light text-black dropdownContent text-sm">
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
                 <li class="mb-8">
-                    <a>استعلام خدمات</a>
+                    <a class="flex items-center justify-between dropdownBtn">
+                        <p>دپارتمان ها</p>
+                        <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                            viewBox="0 0 12 7" fill="none">
+                            <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                    <ul
+                        class="font-light text-black dropdownContent text-sm">
+                        <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black dropdownBtn">
+                                <div class="flex items-center gap-3 relative -right-2 -mr-2">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7.5" cy="8" r="5.5" fill="white" stroke="#F76B16" stroke-width="4"/>
+                                    </svg>
+                                    <p>توریستی</p>
+                                </div>
+                                <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                                    viewBox="0 0 12 7" fill="none">
+                                    <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                        stroke-linecap="square" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="font-light text-black dropdownContent text-sm">
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black dropdownBtn">
+                                <div class="flex items-center gap-3 relative -right-2 -mr-2">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7.5" cy="8" r="5.5" fill="white" stroke="#F76B16" stroke-width="4"/>
+                                    </svg>
+                                    <p>تحصیلی</p>
+                                </div>
+                                <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                                    viewBox="0 0 12 7" fill="none">
+                                    <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                        stroke-linecap="square" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="font-light text-black dropdownContent text-sm">
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-8">
+                    <a class="flex items-center justify-between dropdownBtn">
+                        <p>مشاوره</p>
+                        <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                            viewBox="0 0 12 7" fill="none">
+                            <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                    <ul
+                        class="font-light text-black dropdownContent text-sm">
+                        <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black dropdownBtn">
+                                <div class="flex items-center gap-3 relative -right-2 -mr-2">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7.5" cy="8" r="5.5" fill="white" stroke="#F76B16" stroke-width="4"/>
+                                    </svg>
+                                    <p>توریستی</p>
+                                </div>
+                                <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                                    viewBox="0 0 12 7" fill="none">
+                                    <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                        stroke-linecap="square" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="font-light text-black dropdownContent text-sm">
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black dropdownBtn">
+                                <div class="flex items-center gap-3 relative -right-2 -mr-2">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7.5" cy="8" r="5.5" fill="white" stroke="#F76B16" stroke-width="4"/>
+                                    </svg>
+                                    <p>تحصیلی</p>
+                                </div>
+                                <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
+                                    viewBox="0 0 12 7" fill="none">
+                                    <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                        stroke-linecap="square" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="font-light text-black dropdownContent text-sm">
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-4 ltr:border-l-2 ltr:border-r-0 border-r-2 border-dashed border-[#e2e2e2] pr-2 mr-[6px]">
+                                    <a class="flex items-center gap-3 relative -right-2 -mr-2">
+                                        <svg class="mr-[3px]" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="4.5" cy="4.5" r="2.5" fill="white"/>
+                                            <circle cx="4.5" cy="4.5" r="3.5" stroke="#F76B16" stroke-opacity="0.3" stroke-width="2"/>
+                                        </svg>
+                                        <div class="flex items-center gap-1">
+                                            <img alt="img" src="../img/emojione_flag-for-germany.png" class="w-[18px] h-[18px] rounded-full">
+                                            <p class="flex items-center text-xs opacity-80">آلمان</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-8">
+                    <a>خدمات</a>
                 </li>
                 <li class="mb-8">
                     <a>بلاگ</a>
@@ -699,7 +1066,10 @@
             <div class="max-w-content mx-auto">
                 <div class="grid lg:grid-cols-12 grid-cols-1 lg:px-5 xl:px-0 relative">
                     <div class="lg:col-span-4 xl:col-span-3 px-5 lg:pl-0 lg:pr-5 order-last lg:order-first">
-                        <h1 class="sm:text-[47px] text-[27px] font-rokh font-black text-secondary text-center lg:text-right mt-8 sm:mt-56 lg:mt-0">
+                        <h1 class="sm:text-[47px] text-[27px] relative font-rokh font-black text-secondary text-center lg:text-right mt-8 sm:mt-56 lg:mt-0">
+                            <!-- shape -->
+                            <img alt="img" src="../img/Group 22 (2).png" class="absolute sm:hidden bottom-0">
+                            <img alt="img" src="../img/Group 21.png" class="absolute sm:hidden left-0">
                             <span class="text-orange">معید</span>
                             ،
                             <br>
