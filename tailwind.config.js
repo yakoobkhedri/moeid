@@ -30,6 +30,7 @@ module.exports = {
       },
       maxWidth:{
         'content':'1256px',
+        'content2':'1391px',
       },
     }
 },
