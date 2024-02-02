@@ -77,6 +77,15 @@ a {
 .shadow-14{
   box-shadow: 0px 0px 200px 0px #0000001A;
 }
+.shadow-15{
+  box-shadow: 0px 0px 200px 0px #00000026;
+}
+.shadow-16{
+  box-shadow: -14.14000129699707px 11.109999656677246px 80.79999542236328px 0px #F76B16B2;
+}
+.shadow-17{
+  box-shadow: 0 8px 242px 74px #00000026;
+}
 .bg-pinkgradient3{
   background: linear-gradient(90deg, #E3E9F2 0%, rgba(227, 232, 242, 0) 221.14%);
 }

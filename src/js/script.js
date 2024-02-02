@@ -42,7 +42,7 @@ hamIcon.addEventListener('click', function () {
 var banner = new Swiper(".banner", {
   slidesPerView: 1,
   spaceBetween: 180,
-  // autoplay: true,
+  autoplay: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -89,6 +89,19 @@ var ourServices = new Swiper(".ourServices", {
     el: ".swiper-pagination",
     clickable: true,
   }
+});
+var departemanCmment = new Swiper(".departeman-comment", {
+  slidesPerView: 1,
+  spaceBetween: 180,
+  autoplay: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 var lawyer2 = new Swiper(".lawyer2", {
   loop: true,
