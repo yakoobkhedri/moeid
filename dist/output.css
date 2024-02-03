@@ -1519,6 +1519,18 @@ video {
   margin-top: 84px;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -1609,6 +1621,10 @@ video {
 
 .h-\[104px\] {
   height: 104px;
+}
+
+.h-\[10px\] {
+  height: 10px;
 }
 
 .h-\[117px\] {
@@ -1791,8 +1807,8 @@ video {
   height: 100%;
 }
 
-.h-\[10px\] {
-  height: 10px;
+.h-\[66px\] {
+  height: 66px;
 }
 
 .min-h-\[350px\] {
@@ -1877,6 +1893,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[10px\] {
+  width: 10px;
 }
 
 .w-\[110px\] {
@@ -2057,10 +2077,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[10px\] {
-  width: 10px;
 }
 
 .max-w-\[1233px\] {
@@ -2292,6 +2308,10 @@ video {
   gap: 2.25rem;
 }
 
+.gap-\[14px\] {
+  gap: 14px;
+}
+
 .gap-\[18px\] {
   gap: 18px;
 }
@@ -2310,10 +2330,6 @@ video {
 
 .gap-\[9px\] {
   gap: 9px;
-}
-
-.gap-\[14px\] {
-  gap: 14px;
 }
 
 .gap-x-7 {
@@ -2423,6 +2439,10 @@ video {
   border-radius: 38px;
 }
 
+.rounded-\[3px\] {
+  border-radius: 3px;
+}
+
 .rounded-\[40px\] {
   border-radius: 40px;
 }
@@ -2449,10 +2469,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[3px\] {
-  border-radius: 3px;
 }
 
 .rounded-b-\[24px\] {
@@ -2815,6 +2831,11 @@ video {
   padding-right: 2.25rem;
 }
 
+.px-\[14px\] {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 .px-\[15px\] {
   padding-left: 15px;
   padding-right: 15px;
@@ -2885,6 +2906,11 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .py-\[15px\] {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -2898,16 +2924,6 @@ video {
 .py-\[26px\] {
   padding-top: 26px;
   padding-bottom: 26px;
-}
-
-.px-\[14px\] {
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .pb-10 {
@@ -3120,6 +3136,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[15px\] {
+  font-size: 15px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -3228,6 +3248,10 @@ video {
 
 .opacity-80 {
   opacity: 0.8;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .shadow {
@@ -3422,7 +3446,7 @@ a {
   transform: rotate(0);
 }
 
-.dropdownContent {
+.dropdownContent,.accordionContent {
   padding: 0;
   max-height: 0;
   overflow: hidden;
@@ -3433,6 +3457,10 @@ a {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;
+}
+
+.accordionContent.active{
+  max-height: 2000px;
 }
 
 input[type="number"] {
@@ -3502,6 +3530,10 @@ input[type="number"] {
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(30 45 72 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .group:hover .group-hover\:grid {
@@ -4323,6 +4355,11 @@ input[type="number"] {
   .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:pl-\[68px\] {

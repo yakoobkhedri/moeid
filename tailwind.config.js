@@ -26,7 +26,7 @@ module.exports = {
         yekanBakhRegular: "yekanBakh-Regular",
       },
       boxShadow: {
-      
+        'next':'box-shadow: -2px 0px 24px 0px #0000001A',
       },
       maxWidth:{
         'content':'1256px',

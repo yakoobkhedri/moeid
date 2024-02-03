@@ -164,53 +164,6 @@ var services = new Swiper(".services", {
   }
 });
 
-// change language
-
-let langItems = Array.from(document.querySelectorAll('.langDropdown > div'));
-let languageLink = Array.from(document.querySelectorAll('.language-link'));
-let langDropdown = Array.from(document.querySelectorAll('.langDropdown'));
-let langIcons = Array.from(document.querySelectorAll('.langIcon'));
-let swiper = Array.from(document.querySelectorAll('.swiper'));
-
-languageLink.forEach((item) => {
-  item.addEventListener('click', function () {
-    langDropdown.forEach((item) => {
-      item.classList.toggle('active');
-    })
-    document.addEventListener('click', (event) => {
-      if (!event.target.closest('.langDropdown') && !event.target.closest('.language-link')) {
-        langDropdown.forEach((item) => {
-          item.classList.remove('active');
-        })
-      }
-    })
-  })
-})
-
-langItems.forEach((item) => {
-  item.addEventListener('click', function () {
-    let langIcon = item.querySelector('img').src;
-    langIcons.forEach((item) => [
-      item.src = langIcon
-    ])
-    langDropdown.forEach((item) => {
-      item.classList.remove('active');
-    })
-    let tabId = item.dataset.id;
-    if (tabId == 1) {
-      document.getElementById('langText').textContent = 'ENG';
-      document.documentElement.dir = 'ltr';
-      swiper.forEach((item)=>{
-        item.dir='ltr';
-      })
-    }
-    if (tabId == 2) {
-      document.getElementById('langText').textContent = 'FA';
-      document.documentElement.dir = 'rtl';
-    }
-  })
-});
-
 // radio input
 
 let addressItem=Array.from(document.getElementsByClassName('addressItem'));
@@ -219,5 +172,15 @@ addressItem.forEach((item)=>{
   item.addEventListener('click',function () {
     addressItem.forEach((items)=>{items.classList.remove('active')});
     item.classList.add('active');
+  })
+})
+
+// accordion
+
+let accordionBtn=Array.from(document.getElementsByClassName('accordionBtn'));
+
+accordionBtn.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.nextElementSibling.classList.toggle('active');
   })
 })
