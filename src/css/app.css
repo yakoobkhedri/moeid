@@ -141,6 +141,12 @@ input[type="number"] {
   background-position: center;
   background-repeat: no-repeat;
 }
+.bg-migrate2{
+  background-image: url('../src/img/Rectangle 150 (2).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .swiper-pagination-clickable .swiper-pagination-bullet{
   background-color: #D9D9D9;
   width: 10px;

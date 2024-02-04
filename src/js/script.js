@@ -99,6 +99,33 @@ var ourServices = new Swiper(".ourServices", {
     clickable: true,
   }
 });
+var statistics= new Swiper(".statistics", {
+  loop: true,
+  spaceBetween: 35,
+  slidesPerView: 1,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
 var departemanCmment = new Swiper(".departeman-comment", {
   slidesPerView: 1,
   spaceBetween: 180,
