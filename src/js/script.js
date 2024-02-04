@@ -1,3 +1,12 @@
+// accordion
+
+let accordionBtn=Array.from(document.getElementsByClassName('accordionBtn'));
+
+accordionBtn.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
 // menu
 
 let btn = Array.from(document.querySelectorAll('.viza'));
@@ -172,15 +181,5 @@ addressItem.forEach((item)=>{
   item.addEventListener('click',function () {
     addressItem.forEach((items)=>{items.classList.remove('active')});
     item.classList.add('active');
-  })
-})
-
-// accordion
-
-let accordionBtn=Array.from(document.getElementsByClassName('accordionBtn'));
-
-accordionBtn.forEach((item)=>{
-  item.addEventListener('click',function () {
-    item.nextElementSibling.classList.toggle('active');
   })
 })
