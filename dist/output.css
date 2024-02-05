@@ -623,6 +623,14 @@ video {
   bottom: -5px !important;
 }
 
+.\!-left-2 {
+  left: -0.5rem !important;
+}
+
+.\!-right-2 {
+  right: -0.5rem !important;
+}
+
 .\!bottom-8 {
   bottom: 2rem !important;
 }
@@ -637,6 +645,10 @@ video {
 
 .\!left-14 {
   left: 3.5rem !important;
+}
+
+.\!left-auto {
+  left: auto !important;
 }
 
 .\!right-0 {
@@ -733,6 +745,10 @@ video {
 
 .-right-\[117px\] {
   right: -117px;
+}
+
+.-right-\[1px\] {
+  right: -1px;
 }
 
 .-right-\[3px\] {
@@ -1055,6 +1071,10 @@ video {
   right: 270px;
 }
 
+.right-\[38px\] {
+  right: 38px;
+}
+
 .right-\[46px\] {
   right: 46px;
 }
@@ -1163,40 +1183,8 @@ video {
   top: 83px;
 }
 
-.right-\[38px\] {
-  right: 38px;
-}
-
-.-right-\[1px\] {
-  right: -1px;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
-.right-7 {
-  right: 1.75rem;
-}
-
-.\!right-7 {
-  right: 1.75rem !important;
-}
-
-.\!-left-2 {
-  left: -0.5rem !important;
-}
-
-.\!-left-3 {
-  left: -0.75rem !important;
-}
-
-.\!-right-2 {
-  right: -0.5rem !important;
-}
-
-.\!left-auto {
-  left: auto !important;
+.\!-bottom-\[26px\] {
+  bottom: -26px !important;
 }
 
 .-z-0 {
@@ -2275,11 +2263,6 @@ video {
 
 .rotate-\[7deg\] {
   --tw-rotate: 7deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-rotate-180 {
-  --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3777,6 +3760,10 @@ input[type="number"] {
   left: 270px;
 }
 
+:is([dir="ltr"] .ltr\:left-\[38px\]) {
+  left: 38px;
+}
+
 :is([dir="ltr"] .ltr\:left-\[46px\]) {
   left: 46px;
 }
@@ -3867,10 +3854,6 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
-}
-
-:is([dir="ltr"] .ltr\:left-\[38px\]) {
-  left: 38px;
 }
 
 :is([dir="ltr"] .ltr\:order-last) {
@@ -4379,8 +4362,8 @@ input[type="number"] {
     margin-top: 2.25rem;
   }
 
-  .sm\:mt-\[132px\] {
-    margin-top: 132px;
+  .sm\:mt-\[182px\] {
+    margin-top: 182px;
   }
 
   .sm\:mt-\[283px\] {
@@ -4393,10 +4376,6 @@ input[type="number"] {
 
   .sm\:mt-\[84px\] {
     margin-top: 84px;
-  }
-
-  .sm\:mt-\[182px\] {
-    margin-top: 182px;
   }
 
   .sm\:block {
@@ -4744,6 +4723,10 @@ input[type="number"] {
 
   .md\:mt-96 {
     margin-top: 24rem;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem;
   }
 
   .md\:block {

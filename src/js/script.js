@@ -61,6 +61,19 @@ var banner = new Swiper(".banner", {
     prevEl: ".swiper-button-prev",
   },
 });
+var aboutBanner = new Swiper(".aboutBanner", {
+  slidesPerView: 1,
+  spaceBetween: 180,
+  autoplay: true,
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 var category = new Swiper(".category", {
   slidesPerView: 1.3,
   spaceBetween: 20,
