@@ -91,7 +91,7 @@ var category = new Swiper(".category", {
 var ourServices = new Swiper(".ourServices", {
   loop: true,
   spaceBetween: 19,
-  slidesPerView: 1.7,
+  slidesPerView: 1,
   breakpoints: {
     576: {
       slidesPerView: 2,
@@ -214,7 +214,32 @@ var services = new Swiper(".services", {
     disableOnInteraction: false,
   }
 });
+var customers = new Swiper(".customers", {
+  loop: true,
+  spaceBetween: 26,
+  slidesPerView: 1.7,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
 
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 41,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
 // radio input
 
 let addressItem=Array.from(document.getElementsByClassName('addressItem'));
