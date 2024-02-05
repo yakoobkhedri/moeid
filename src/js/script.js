@@ -77,14 +77,16 @@ var category = new Swiper(".category", {
 });
 var ourServices = new Swiper(".ourServices", {
   loop: true,
-  spaceBetween: 41,
-  slidesPerView: 1,
+  spaceBetween: 19,
+  slidesPerView: 1.7,
   breakpoints: {
     576: {
       slidesPerView: 2,
+
     },
     992: {
       slidesPerView: 3,
+      spaceBetween: 41,
     },
     1200: {
       slidesPerView: 4,
