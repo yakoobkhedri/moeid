@@ -104,6 +104,32 @@ a {
 .shadow-next{
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
+.scroll-custom::-webkit-scrollbar {
+  width: 4px;
+  /* width of the entire scrollbar */
+}
+.scroll-custom::-webkit-scrollbar-track {
+  background: transparent;
+  width: 4px;
+  /* color of the tracking area */
+  margin: 29px 0;
+}
+.scroll-custom::-webkit-scrollbar-thumb{
+  background-color: #1E2D48;
+  width: 4px;
+  /* color of the scroll thumb */
+  border-radius: 40px;
+  /* roundness of the scroll thumb */
+  border: 1px solid transparent;
+  /* creates padding around scroll thumb */
+}
+.scroll-custom {
+  scrollbar-width: thin;
+  /* "auto" or "thin" */
+  scrollbar-color: #1E2D48 transparent;
+  /* scroll thumb and track */
+  scroll-margin: 29px;
+}
 .bg-pinkgradient3{
   background: linear-gradient(90deg, #E3E9F2 0%, rgba(227, 232, 242, 0) 221.14%);
 }
