@@ -1287,9 +1287,9 @@ video {
   grid-column: span 6 / span 6;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .mx-\[15px\] {
@@ -1310,11 +1310,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .-mb-28 {
@@ -1475,10 +1470,6 @@ video {
 
 .mr-7 {
   margin-right: 1.75rem;
-}
-
-.mr-\[110px\] {
-  margin-right: 110px;
 }
 
 .mr-\[12px\] {
@@ -1979,6 +1970,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[399px\] {
+  height: 399px;
 }
 
 .min-h-\[350px\] {
@@ -3219,9 +3214,19 @@ video {
   padding-bottom: 21px;
 }
 
-.py-\[22px\] {
-  padding-top: 22px;
-  padding-bottom: 22px;
+.px-\[18px\] {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.\!px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-10 {
@@ -3266,10 +3271,6 @@ video {
 
 .pb-8 {
   padding-bottom: 2rem;
-}
-
-.pb-\[22px\] {
-  padding-bottom: 22px;
 }
 
 .pb-\[46px\] {
@@ -3368,10 +3369,6 @@ video {
   padding-top: 151px;
 }
 
-.pt-\[22px\] {
-  padding-top: 22px;
-}
-
 .pt-\[30px\] {
   padding-top: 30px;
 }
@@ -3394,6 +3391,10 @@ video {
 
 .pt-\[90px\] {
   padding-top: 90px;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -3476,6 +3477,14 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
 }
 
 .font-black {
@@ -4163,6 +4172,14 @@ input[type="number"] {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:left-20) {
+  left: 5rem;
+}
+
+:is([dir="ltr"] .ltr\:right-\[29px\]) {
+  right: 29px;
+}
+
 :is([dir="ltr"] .ltr\:order-last) {
   order: 9999;
 }
@@ -4277,6 +4294,10 @@ input[type="number"] {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+:is([dir="ltr"] .ltr\:justify-start) {
+  justify-content: flex-start;
+}
+
 :is([dir="ltr"] .ltr\:rounded-\[26px\]) {
   border-radius: 26px;
 }
@@ -4289,6 +4310,16 @@ input[type="number"] {
 :is([dir="ltr"] .ltr\:rounded-r-\[18px\]) {
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
+}
+
+:is([dir="ltr"] .ltr\:rounded-l-\[40px\]) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+:is([dir="ltr"] .ltr\:rounded-r-2xl) {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 :is([dir="ltr"] .ltr\:rounded-bl-\[10px\]) {
@@ -4435,6 +4466,10 @@ input[type="number"] {
   padding-right: 1.5rem;
 }
 
+:is([dir="ltr"] .ltr\:pl-\[18px\]) {
+  padding-left: 18px;
+}
+
 :is([dir="ltr"] .ltr\:text-left) {
   text-align: left;
 }
@@ -4465,6 +4500,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:right-0) {
   right: 0px;
+}
+
+:is([dir="rtl"] .rtl\:left-\[29px\]) {
+  left: 29px;
 }
 
 :is([dir="rtl"] .rtl\:order-first) {
@@ -4502,6 +4541,14 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:\[transform\:rotateY\(180deg\)\]) {
   transform: rotateY(180deg);
+}
+
+:is([dir="rtl"] .rtl\:\[transform\:rotateY\(332deg\)\]) {
+  transform: rotateY(332deg);
+}
+
+:is([dir="rtl"] .rtl\:\[transform\:rotateY\(357deg\)\]) {
+  transform: rotateY(357deg);
 }
 
 @media (min-width: 400px) {
@@ -4730,6 +4777,10 @@ input[type="number"] {
     height: 100%;
   }
 
+  .sm\:h-\[548px\] {
+    height: 548px;
+  }
+
   .sm\:w-\[138px\] {
     width: 138px;
   }
@@ -4786,12 +4837,24 @@ input[type="number"] {
     gap: 0.75rem;
   }
 
+  .sm\:gap-11 {
+    gap: 2.75rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
   .sm\:rounded-\[18px\] {
     border-radius: 18px;
   }
 
   .sm\:rounded-\[22px\] {
     border-radius: 22px;
+  }
+
+  .sm\:rounded-\[30px\] {
+    border-radius: 30px;
   }
 
   .sm\:rounded-br-\[118px\] {
@@ -4850,13 +4913,32 @@ input[type="number"] {
     padding-bottom: 2rem;
   }
 
+  .sm\:py-\[22px\] {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
   .sm\:py-\[26px\] {
     padding-top: 26px;
     padding-bottom: 26px;
   }
 
-  .sm\:py-\[22px\] {
-    padding-top: 22px;
+  .sm\:px-\[26px\] {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .sm\:\!px-7 {
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+  }
+
+  .sm\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .sm\:pb-\[22px\] {
     padding-bottom: 22px;
   }
 
@@ -4880,12 +4962,16 @@ input[type="number"] {
     padding-top: 0px;
   }
 
-  .sm\:pb-\[22px\] {
-    padding-bottom: 22px;
-  }
-
   .sm\:pt-\[22px\] {
     padding-top: 22px;
+  }
+
+  .sm\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .sm\:pt-\[31px\] {
+    padding-top: 31px;
   }
 
   .sm\:text-right {
@@ -4936,6 +5022,15 @@ input[type="number"] {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-\[15px\] {
+    font-size: 15px;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .sm\:leading-8 {
@@ -5000,6 +5095,14 @@ input[type="number"] {
 
   :is([dir="ltr"] .ltr\:sm\:rounded-br-\[10px\]) {
     border-bottom-right-radius: 10px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:border-r-0) {
+    border-right-width: 0px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:border-l-2) {
+    border-left-width: 2px;
   }
 
   :is([dir="ltr"] .ltr\:sm\:pl-24) {
@@ -5102,6 +5205,10 @@ input[type="number"] {
 
   .md\:mt-96 {
     margin-top: 24rem;
+  }
+
+  .md\:-mt-16 {
+    margin-top: -4rem;
   }
 
   .md\:block {
@@ -5543,6 +5650,10 @@ input[type="number"] {
     margin-right: 0px;
   }
 
+  .lg\:mr-\[110px\] {
+    margin-right: 110px;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -5716,6 +5827,10 @@ input[type="number"] {
     padding: 68px;
   }
 
+  .lg\:p-\[7px\] {
+    padding: 7px;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -5810,6 +5925,10 @@ input[type="number"] {
 
   .lg\:pt-\[66px\] {
     padding-top: 66px;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
   }
 
   .lg\:text-right {
