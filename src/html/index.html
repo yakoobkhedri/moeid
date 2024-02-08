@@ -1092,14 +1092,14 @@
                     </div>
                     <div class="lg:col-span-8 xl:col-span-9 order-first lg:order-last">
                         <div class="relative bannerBox ltr:xl:-right-[72px] ltr:xl:left-auto xl:-left-[72px]">
-                            <div class="swiper banner xl:pb-32 pr-11 ltr:sm:pl-24 sm:pr-24 h-[297px] sm:h-[535px] xl:h-auto pl-11 ltr:sm:pr-[68px] sm:pl-[68px]" dir="ltr">
+                            <div class="swiper banner xl:pb-32 pr-11 ltr:sm:pl-24 sm:pr-24 h-[297px] sm:h-[535px] xl:h-auto pl-11 ltr:sm:pr-[68px] sm:pl-[68px]" dir="">
                                 <div class="swiper-wrapper h-[211px] sm:h-full">
                                     <div class="swiper-slide relative">
                                         <!-- shape -->
                                         <img alt="img" src="../img/EDITION 1.png"
-                                            class="absolute bottom-5 ltr:-left-[74px] ltr:right-auto -right-[74px] w-[223px] sm:w-auto ltr:ml-12 ltr:mr-0 mr-12 ltr:sm:ml-0 sm:mr-0">
+                                            class="absolute bottom-5 ltr:-left-[74px] ltr:right-auto rtl:-right-[74px] w-[223px] sm:w-auto ltr:ml-12 ltr:mr-0 rtl:mr-12 ltr:sm:ml-0 rtl:sm:mr-0">
                                         <img alt="img" src="../img/plane-5370548-4492085 1 (2).png"
-                                            class="absolute top-9 ltr:-left-[117px] ltr:right-auto -right-[117px] w-[98px] sm:w-auto ltr:ml-[86px] ltr:mr-0  mr-[86px] ltr:sm:ml-5 ltr:sm:mr-0 sm:mr-5 ltr:lg:ml-0 lg:mr-0 ltr:[transform:rotateY(180deg)]">
+                                            class="absolute top-9 ltr:-left-[117px] ltr:right-auto rtl:-right-[117px] w-[98px] sm:w-auto ltr:ml-[86px] ltr:mr-0  rtl:mr-[86px] ltr:sm:ml-5 ltr:sm:mr-0 rtl:sm:mr-5 ltr:lg:ml-0 rtl:lg:mr-0 ltr:[transform:rotateY(180deg)]">
                                         <img alt="img" src="../img/globe-6684104-5523020 1.png"
                                             class="absolute top-[69px] sm:top-[183px] bottom-[230px] ltr:mr-[50px] ltr:ml-0 ml-[50px] ltr:sm:mr-4 ltr:sm:ml-0 sm:ml-4 ltr:lg:mr-0 lg:ml-0 ltr:-right-[70px] ltr:left-auto -left-[70px] w-[50px] sm:w-auto">
                                         <!--  -->
@@ -1119,7 +1119,7 @@
                                             class="rounded-[10px] ltr:rounded-bl-[46px] ltr:rounded-br-[10px] rounded-br-[46px] ltr:sm:rounded-bl-[118px] ltr:sm:rounded-br-[10px] sm:rounded-br-[118px] w-full h-full object-cover">
                                     </div>
                                 </div>
-                                <div class="swiper-pagination !top-[276px] sm:!top-[622px] text-center !left-14 !right-auto mx-auto sm:mx-0 sm:left-14 !w-20 absolute">
+                                <div class="swiper-pagination !top-[276px] sm:!top-[622px] text-center ltr:lg:!right-14 ltr:lg:!left-auto lg:!left-14 !right-auto mx-auto sm:mx-0 sm:left-14 !w-full lg:!w-20 absolute">
                                 </div>
                             </div>
                             <div class="md:flex hidden items-center justify-between">
@@ -3375,10 +3375,15 @@
                 </p>
             </div>
         </div>
-        <!-- mobile menu footer -->
-        <div class="fixed bottom-0 left-0 right-0 z-10 text-xs block min-[450px]:hidden">
+         <!-- mobile menu footer -->
+         <div class="fixed bottom-0 left-0 right-0 z-10 text-xs block min-[450px]:hidden">
+            <!-- wave -->
+            <svg class="absolute -top-10 mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="33" viewBox="0 0 151 33" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z" fill-opacity=".6" fill="white"/>
+                </svg>
+            <!--  -->
             <div
-                class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-blur rounded-t-[20px]">
+                class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-white opacity-[.6] rounded-t-[20px]">
             </div>
             <div class="top-6 flex justify-between items-center px-1">
                 <div class="flex justify-between items-center text-[11px] w-full relative text-[#556076]">
