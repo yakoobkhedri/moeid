@@ -218,6 +218,8 @@ input[type="number"] {
 .viza.active img{
   opacity: 1;
 }
-@media (max-width: 768px) {
-
+@media (min-width: 992px) {
+  .items-lg-normal{
+    align-items: normal;
+  }
 }
