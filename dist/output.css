@@ -6564,3 +6564,31 @@ input[type="number"] {
     padding-right: 2.5rem;
   }
 }
+
+.firstSliderContainer:not(.swiper-slide-active){
+  overflow: hidden;
+}
+
+.firstSliderContainer .data_imagesContBottomTop,
+.firstSliderContainer .data_imagesContRightLeft,
+.firstSliderContainer .data_imagesContLeftRight{
+  transition: transform .15s;
+  transition-duration: 1s;
+}
+
+.data_imagesContBottomTop{
+  transform: translate(0,100%);
+
+}
+.data_imagesContRightLeft{
+  transform: translate(100%,0);
+}
+.data_imagesContLeftRight{
+  transform: translate(-100%,0);
+}
+
+.firstSliderContainer.swiper-slide-active img.data_imagesContBottomTop,
+.firstSliderContainer.swiper-slide-active img.data_imagesContRightLeft,
+.firstSliderContainer.swiper-slide-active img.data_imagesContLeftRight{
+  transform: translate(0,0);
+}
