@@ -1736,6 +1736,22 @@ video {
   margin-top: auto;
 }
 
+.mt-\[170px\] {
+  margin-top: 170px;
+}
+
+.mt-\[110px\] {
+  margin-top: 110px;
+}
+
+.mt-\[90px\] {
+  margin-top: 90px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
 .block {
   display: block;
 }
@@ -3549,6 +3565,10 @@ video {
   font-family: rokh;
 }
 
+.font-Astonia {
+  font-family: Astonia;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -3822,6 +3842,12 @@ video {
 }
 
 @font-face {
+  font-family: Astonia;
+
+  src: url('../src/fonts/Astonia.ttf') format("truetype");
+}
+
+@font-face {
   font-family: stretch;
 
   src: url('../fonts/StretchPro.otf') format("opentype");
@@ -4076,45 +4102,43 @@ input[type="number"] {
   opacity: 1;
 }
 
-.firstSliderContainer:not(.swiper-slide-active){
+.firstSliderContainer:not(.swiper-slide-active) {
   overflow: hidden;
 }
 
 .firstSliderContainer .data_imagesContBottomTop,
 .firstSliderContainer .data_imagesContRightLeft,
-.firstSliderContainer .data_imagesContLeftRight{
-  transition: transform .15s;
+.firstSliderContainer .data_imagesContLeftRight {
+  transition: transform 0.15s;
   transition-duration: 1s;
 }
 
-html[dir="rtl"] .data_imagesContBottomTop{
-  transform: translate(0,100%);
+.data_imagesContBottomTop {
+  transform: translate(0, 100%);
 }
 
-html[dir="rtl"] .data_imagesContRightLeft{
-  transform: translate(100%,0);
+html[dir="rtl"] .data_imagesContRightLeft,
+html[dir="ltr"] .data_imagesContLeftRight {
+  transform: translate(100%, 0);
 }
 
-html[dir="rtl"] .data_imagesContLeftRight{
-  transform: translate(-100%,0);
+html[dir="rtl"] .data_imagesContLeftRight,
+html[dir="ltr"] .data_imagesContRightLeft {
+  transform: translate(-100%, 0);
 }
 
-html[dir="ltr"] .data_imagesContBottomTop{
-  transform: translate(0,100%);
-}
-
-html[dir="ltr"] .data_imagesContRightLeft{
-  transform: translate(-100%,0);
-}
-
-html[dir="ltr"] .data_imagesContLeftRight{
-  transform: translate(100%,0);
+html[dir="ltr"]  .firstSliderContainer:not(.swiper-slide-active) img.data_imagesContRightLeft {
+  transform: rotateY(180deg) translate(100%, 0);
 }
 
 .firstSliderContainer.swiper-slide-active img.data_imagesContBottomTop,
 .firstSliderContainer.swiper-slide-active img.data_imagesContRightLeft,
-.firstSliderContainer.swiper-slide-active img.data_imagesContLeftRight{
-  transform: translate(0,0);
+.firstSliderContainer.swiper-slide-active img.data_imagesContLeftRight {
+  transform: translate(0, 0);
+}
+
+html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
+  transform: rotateY(180deg) translate(0, 0);
 }
 
 @media (min-width: 992px) {
@@ -4507,8 +4531,18 @@ html[dir="ltr"] .data_imagesContLeftRight{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+:is([dir="ltr"] .ltr\:-rotate-2) {
+  --tw-rotate: -2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 :is([dir="ltr"] .ltr\:justify-start) {
   justify-content: flex-start;
+}
+
+:is([dir="ltr"] .ltr\:gap-x-3) {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
 :is([dir="ltr"] .ltr\:rounded-\[26px\]) {
@@ -4689,6 +4723,10 @@ html[dir="ltr"] .data_imagesContLeftRight{
 
 :is([dir="ltr"] .ltr\:text-right) {
   text-align: right;
+}
+
+:is([dir="ltr"] .ltr\:font-Astonia) {
+  font-family: Astonia;
 }
 
 :is([dir="ltr"] .ltr\:\[transform\:rotate\(-360deg\)\]) {
@@ -4972,6 +5010,14 @@ html[dir="ltr"] .data_imagesContLeftRight{
 
   .sm\:mt-\[84px\] {
     margin-top: 84px;
+  }
+
+  .sm\:mt-\[235px\] {
+    margin-top: 235px;
+  }
+
+  .sm\:mt-72 {
+    margin-top: 18rem;
   }
 
   .sm\:block {
@@ -6587,6 +6633,10 @@ html[dir="ltr"] .data_imagesContLeftRight{
 
   :is([dir="ltr"] .ltr\:xl\:-mr-\[51px\]) {
     margin-right: -51px;
+  }
+
+  :is([dir="ltr"] .ltr\:xl\:w-\[722px\]) {
+    width: 722px;
   }
 
   :is([dir="ltr"] .ltr\:xl\:pl-0) {

@@ -24,6 +24,7 @@ module.exports = {
         rokh: "rokh",
         stretch: "stretch",
         yekanBakhRegular: "yekanBakh-Regular",
+        Astonia:"Astonia"
       },
       boxShadow: {
         'next':'box-shadow: -2px 0px 24px 0px #0000001A',
