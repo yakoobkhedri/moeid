@@ -218,6 +218,42 @@ input[type="number"] {
 .viza.active img{
   opacity: 1;
 }
+.firstSliderContainer:not(.swiper-slide-active){
+  overflow: hidden;
+}
+
+.firstSliderContainer .data_imagesContBottomTop,
+.firstSliderContainer .data_imagesContRightLeft,
+.firstSliderContainer .data_imagesContLeftRight{
+  transition: transform .15s;
+  transition-duration: 1s;
+}
+
+html[dir="rtl"] .data_imagesContBottomTop{
+  transform: translate(0,100%);
+
+}
+html[dir="rtl"] .data_imagesContRightLeft{
+  transform: translate(100%,0);
+}
+html[dir="rtl"] .data_imagesContLeftRight{
+  transform: translate(-100%,0);
+}
+html[dir="ltr"] .data_imagesContBottomTop{
+  transform: translate(0,100%);
+}
+html[dir="ltr"] .data_imagesContRightLeft{
+  transform: translate(-100%,0);
+}
+html[dir="ltr"] .data_imagesContLeftRight{
+  transform: translate(100%,0);
+}
+
+.firstSliderContainer.swiper-slide-active img.data_imagesContBottomTop,
+.firstSliderContainer.swiper-slide-active img.data_imagesContRightLeft,
+.firstSliderContainer.swiper-slide-active img.data_imagesContLeftRight{
+  transform: translate(0,0);
+}
 @media (min-width: 992px) {
   .items-lg-normal{
     align-items: normal;
