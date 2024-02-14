@@ -108,6 +108,9 @@ a {
 .shadow-23{
   box-shadow: 0px 0px 62.400001525878906px 0px #00000014;
 }
+.shadow-24{
+  box-shadow: 0px 0px 251px 257px #0000001A;
+}
 .shadow-next{
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
@@ -258,6 +261,48 @@ html[dir="ltr"]  .firstSliderContainer:not(.swiper-slide-active) img.data_images
 html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   transform: rotateY(180deg) translate(0, 0);
 }
+#usersComment {
+  transition: all 0.5s;
+}
+#usersComment * {
+  transition: all 0.5s;
+}
+#usersComment.active {
+  animation: usersComment 1s linear;
+}
+#usersComment > div.add {
+  animation: usersCommentEfectsadd 1s linear;
+}
+#usersComment > div.remove {
+  animation: usersCommentEfectsremove 0.5s linear;
+}
+@keyframes usersCommentEfectsadd {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes usersCommentEfectsremove {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes usersComment {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -35%);
+  }
+}
+
 @media (min-width: 992px) {
   .items-lg-normal{
     align-items: normal;
