@@ -943,6 +943,10 @@ video {
   top: -6px;
 }
 
+.-top-\[7px\] {
+  top: -7px;
+}
+
 .-top-\[86px\] {
   top: -86px;
 }
@@ -1319,8 +1323,12 @@ video {
   top: 83px;
 }
 
-.-top-\[7px\] {
-  top: -7px;
+.-top-6 {
+  top: -1.5rem;
+}
+
+.-top-\[23px\] {
+  top: -23px;
 }
 
 .-z-0 {
@@ -1892,6 +1900,10 @@ video {
   height: 1rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-64 {
   height: 16rem;
 }
@@ -2146,10 +2158,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .min-h-\[350px\] {
@@ -3434,11 +3442,6 @@ video {
   padding-right: 75px;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -4100,34 +4103,44 @@ a {
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
 
-.scroll-custom::-webkit-scrollbar {
-  width: 4px;
-  /* width of the entire scrollbar */
-}
-
-.scroll-custom::-webkit-scrollbar-track {
-  background: transparent;
-  width: 4px;
-  /* color of the tracking area */
-  margin: 29px 0;
-}
-
-.scroll-custom::-webkit-scrollbar-thumb{
-  background-color: #1E2D48;
-  width: 4px;
-  /* color of the scroll thumb */
-  border-radius: 40px;
-  /* roundness of the scroll thumb */
-  border: 1px solid transparent;
-  /* creates padding around scroll thumb */
-}
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
 
 .scroll-custom {
   scrollbar-width: thin;
-  /* "auto" or "thin" */
-  scrollbar-color: #1E2D48 transparent;
-  /* scroll thumb and track */
-  scroll-margin: 29px;
+  scrollbar-color: #1E2D48 #E3E3E3;
+}
+
+/* Chrome, Edge and Safari */
+
+.scroll-custom::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+.scroll-custom::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: #E3E3E3;
+}
+
+.scroll-custom::-webkit-scrollbar-track:hover {
+  background-color: #E3E3E3;
+}
+
+.scroll-custom::-webkit-scrollbar-track:active {
+  background-color: #E3E3E3;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #1E2D48;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #1E2D48;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb:active {
+  background-color: #1E2D48;
 }
 
 .bg-pinkgradient3{
@@ -4139,9 +4152,9 @@ a {
 }
 
 .bg-blur{
-  background: #ffffffbd;
-  -webkit-backdrop-filter: blur(11px);
-          backdrop-filter: blur(11px);
+  background: #ffffffe8;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 #hamIcon.active svg:last-child{

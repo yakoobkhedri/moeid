@@ -3916,12 +3916,15 @@
         <!-- mobile menu footer -->
         <div class="fixed bottom-0 left-0 right-0 z-10 text-xs block min-[450px]:hidden">
             <!-- wave -->
-            <svg class="absolute -top-10 mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="33" viewBox="0 0 151 33" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z" fill-opacity=".6" fill="white"/>
+            <svg class="absolute -top-[29px] mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="22" viewBox="0 0 151 33" fill="none">
+                <filter id="shadow" filterUnits="userSpaceOnUse">
+                    <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#D1AF8988"></feDropShadow>
+                </filter>
+                <path style="filter: url(#shadow);" fill-rule="evenodd" clip-rule="evenodd" d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z" fill="white" opacity="0.9"></path>
                 </svg>
             <!--  -->
             <div
-                class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-white opacity-[.6] rounded-t-[20px]">
+                class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-blur rounded-t-[20px]">
             </div>
             <div class="top-6 flex justify-between items-center px-1">
                 <div class="flex justify-between items-center text-[11px] w-full relative text-[#556076]">
