@@ -35,6 +35,7 @@ let commentsInfo = {
     { hasCommentsAnswer: false },
   ],
 };
+let isBlur = false;
 function createComment(hasAnser) {
   const parentDivs = document.createElement("div");
   const parentDiv = document.createElement("div");
@@ -145,15 +146,28 @@ function setCommentsEfect() {
   usersCommentCont.lastChild.onanimationend = () => {
     usersCommentCont.lastChild.classList.remove("add");
   };
+  const style = document.createElement("style");
+
+  document.querySelector("head").appendChild(style);
   usersCommentCont.children[0].classList.add("remove");
   usersCommentCont.classList.add("active");
   usersCommentCont.children[0].onanimationend = () => {
     usersCommentCont.children[0].remove();
     usersCommentCont.classList.remove("active");
+    style.remove();
   };
   commentsInfo.showComments++;
 }
 
 setInterval(() => {
+  if (isBlur) return;
   setCommentsEfect();
 }, 6000);
+onblur = () => {
+  isBlur = true;
+  console.log(isBlur);
+};
+onfocus = () => {
+  isBlur = false;
+  console.log(isBlur);
+};
