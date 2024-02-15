@@ -1846,8 +1846,8 @@
 
     </main>
 
-     <!-- footer -->
-     <footer class="lg:mt-[240px] hidden mt-14 lg:mb-[32px] relative pb-32 min-[450px]:pb-0">
+      <!-- footer -->
+    <footer class="lg:mt-[240px] hidden mt-14 lg:mb-[32px] relative pb-32 min-[450px]:pb-0">
         <!-- shape -->
         <img alt="shape" src="../img/Vector 11.png" class="absolute left-0 ltr:right-0 ltr:left-auto ltr:[transform:rotateY(180deg)] -top-28 hidden lg:block">
         <!-- bg -->
@@ -2111,12 +2111,15 @@
          <!-- mobile menu footer -->
          <div class="fixed bottom-0 left-0 right-0 z-10 text-xs block min-[450px]:hidden">
             <!-- wave -->
-            <svg class="absolute -top-10 mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="33" viewBox="0 0 151 33" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z" fill-opacity=".6" fill="white"/>
+            <svg class="absolute -top-[29px] mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="22" viewBox="0 0 151 33" fill="none">
+                <filter id="shadow" filterUnits="userSpaceOnUse">
+                    <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#D1AF8988"></feDropShadow>
+                </filter>
+                <path style="filter: url(#shadow);" fill-rule="evenodd" clip-rule="evenodd" d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z" fill="white" opacity="0.9"></path>
                 </svg>
             <!--  -->
             <div
-                class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-white opacity-[.6] rounded-t-[20px]">
+                class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-blur rounded-t-[20px]">
             </div>
             <div class="top-6 flex justify-between items-center px-1">
                 <div class="flex justify-between items-center text-[11px] w-full relative text-[#556076]">
@@ -2205,7 +2208,7 @@
 
      <footer class="lg:mt-[240px] mt-14 lg:mb-[32px] relative pb-32 min-[450px]:pb-0">
         <!-- shape -->
-        <img alt="shape" src="../img/Pattern (11).png" class="absolute ltr:[transform:rotateY(180deg)] ltr:left-0 ltr:right-auto right-0 -bottom-8 lg:-bottom-[122px] hidden lg:block">
+        <img alt="shape" src="../img/Pattern (11).png" class="absolute ltr:left-0 ltr:right-auto right-0 -bottom-8 lg:-bottom-[122px] hidden lg:block ltr:[transform:rotateY(180deg)]">
         <div class="absolute ltr:right-0 ltr:left-auto left-0 bottom-[123px] min-[450px]:bottom-[2px] lg:-bottom-[122px] lg:w-[80%] w-full lg:h-[449px] h-[664px]">
             <img alt="shape" src="../img/Pattern(8).png" class="absolute ltr:right-0 ltr:left-auto left-0 z-10 top-0 ltr:[transform:rotateY(180deg)]">
             <img alt="shape" src="../img/Rectangle 146.png" class="hidden lg:block w-full h-full ltr:[transform:rotateY(180deg)]">
@@ -2243,7 +2246,7 @@
                                 <path opacity="0.5" d="M17.5027 11.4423C17.3328 11.272 17.1023 11.1761 16.8617 11.1758C16.6212 11.1754 16.3903 11.2707 16.22 11.4405C16.0497 11.6104 15.9538 11.8409 15.9535 12.0815C15.9531 12.322 16.0483 12.5528 16.2182 12.7232C17.6247 14.1345 17.586 16.6853 15.8521 18.4265L9.99287 24.3062C8.26012 26.0463 5.72503 26.0825 4.32095 24.6736C2.91566 23.2623 2.95312 20.7103 4.68707 18.9703L7.61607 16.0304C7.7025 15.9467 7.77139 15.8466 7.81873 15.7359C7.86606 15.6253 7.89089 15.5063 7.89176 15.386C7.89263 15.2657 7.86953 15.1464 7.82381 15.0351C7.77808 14.9238 7.71065 14.8227 7.62544 14.7377C7.54023 14.6528 7.43896 14.5856 7.32752 14.5402C7.21609 14.4948 7.09673 14.472 6.9764 14.4732C6.85608 14.4745 6.7372 14.4996 6.6267 14.5473C6.5162 14.5949 6.4163 14.6641 6.33282 14.7508L3.40382 17.6906C1.0947 20.0094 0.8047 23.7105 3.03891 25.9544C5.27432 28.1995 8.9682 27.9059 11.2785 25.5871L17.1365 19.7061C19.4444 17.3885 19.7344 13.6862 17.5027 11.4448V11.4423Z" fill="#F76B16"/>
                             </svg>
                             <div class="relative">
-                                <p class="lg:text-[25px] text-xl rtl:rtl:font-rokh ltr:font-Astonia ltr:font-Astonia font-black text-white">لینک های مفید</p>
+                                <p class="lg:text-[25px] text-xl rtl:font-rokh ltr:font-Astonia font-black text-white">لینک های مفید</p>
                                 <svg class="absolute -top-1 -z-1 ltr:[transform:rotateY(180deg)]" width="258" height="32" viewBox="0 0 258 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path opacity="0.14" d="M0 12.2353L258 0V32L0 26.8235V12.2353Z" fill="url(#paint0_linear_9142_27681)"/>
                                     <defs>
@@ -2333,7 +2336,7 @@
                                 <path opacity="0.5" d="M17.5027 11.4423C17.3328 11.272 17.1023 11.1761 16.8617 11.1758C16.6212 11.1754 16.3903 11.2707 16.22 11.4405C16.0497 11.6104 15.9538 11.8409 15.9535 12.0815C15.9531 12.322 16.0483 12.5528 16.2182 12.7232C17.6247 14.1345 17.586 16.6853 15.8521 18.4265L9.99287 24.3062C8.26012 26.0463 5.72503 26.0825 4.32095 24.6736C2.91566 23.2623 2.95312 20.7103 4.68707 18.9703L7.61607 16.0304C7.7025 15.9467 7.77139 15.8466 7.81873 15.7359C7.86606 15.6253 7.89089 15.5063 7.89176 15.386C7.89263 15.2657 7.86953 15.1464 7.82381 15.0351C7.77808 14.9238 7.71065 14.8227 7.62544 14.7377C7.54023 14.6528 7.43896 14.5856 7.32752 14.5402C7.21609 14.4948 7.09673 14.472 6.9764 14.4732C6.85608 14.4745 6.7372 14.4996 6.6267 14.5473C6.5162 14.5949 6.4163 14.6641 6.33282 14.7508L3.40382 17.6906C1.0947 20.0094 0.8047 23.7105 3.03891 25.9544C5.27432 28.1995 8.9682 27.9059 11.2785 25.5871L17.1365 19.7061C19.4444 17.3885 19.7344 13.6862 17.5027 11.4448V11.4423Z" fill="#F76B16"/>
                             </svg>
                             <div class="relative">
-                                <p class="lg:text-[25px] text-xl rtl:rtl:font-rokh ltr:font-Astonia ltr:font-Astonia font-black text-white">تماس با ما</p>
+                                <p class="lg:text-[25px] text-xl rtl:font-rokh ltr:font-Astonia font-black text-white">تماس با ما</p>
                                 <svg class="absolute -top-1 -z-1 ltr:[transform:rotateY(180deg)]" width="258" height="32" viewBox="0 0 258 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path opacity="0.14" d="M0 12.2353L258 0V32L0 26.8235V12.2353Z" fill="url(#paint0_linear_9142_27681)"/>
                                     <defs>
@@ -2460,12 +2463,15 @@
         <!-- mobile menu footer -->
         <div class="fixed bottom-0 left-0 right-0 z-10 text-xs block min-[450px]:hidden">
             <!-- wave -->
-            <svg class="absolute -top-10 mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="33" viewBox="0 0 151 33" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z" fill-opacity=".6" fill="white"/>
+            <svg class="absolute -top-[29px] mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="22" viewBox="0 0 151 33" fill="none">
+                <filter id="shadow" filterUnits="userSpaceOnUse">
+                    <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#D1AF8988"></feDropShadow>
+                </filter>
+                <path style="filter: url(#shadow);" fill-rule="evenodd" clip-rule="evenodd" d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z" fill="white" opacity="0.9"></path>
                 </svg>
             <!--  -->
             <div
-                class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-white opacity-[.6] rounded-t-[20px]">
+                class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-blur rounded-t-[20px]">
             </div>
             <div class="top-6 flex justify-between items-center px-1">
                 <div class="flex justify-between items-center text-[11px] w-full relative text-[#556076]">
