@@ -11,7 +11,8 @@ accordionBtn.forEach((item)=>{
 
 let btn = Array.from(document.querySelectorAll('.viza'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
-let dropdownBtn =Array.from(document.getElementsByClassName('dropdownBtn'))
+let dropdownBtn =Array.from(document.getElementsByClassName('dropdownBtn'));
+let dropdownBtn2 =Array.from(document.getElementsByClassName('dropdownBtn2'));
 let hamIcon = document.getElementById('hamIcon');
 
 
@@ -21,7 +22,13 @@ dropdownBtn.forEach((item)=>{
     item.nextElementSibling.classList.toggle('active');
   })
 })
-
+dropdownBtn2.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.querySelector('.arrowSvg').classList.toggle('active');
+    item.nextElementSibling.nextElementSibling.classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
 
 btn.forEach((item) => {
   item.addEventListener('mouseover', function () {

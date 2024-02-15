@@ -711,6 +711,10 @@ video {
   bottom: -2rem;
 }
 
+.-bottom-\[19px\] {
+  bottom: -19px;
+}
+
 .-bottom-\[29px\] {
   bottom: -29px;
 }
@@ -1135,10 +1139,6 @@ video {
   right: 1.25rem;
 }
 
-.right-8 {
-  right: 2rem;
-}
-
 .right-9 {
   right: 2.25rem;
 }
@@ -1169,6 +1169,10 @@ video {
 
 .right-\[270px\] {
   right: 270px;
+}
+
+.right-\[30px\] {
+  right: 30px;
 }
 
 .right-\[331px\] {
@@ -1321,14 +1325,6 @@ video {
 
 .top-\[83px\] {
   top: 83px;
-}
-
-.-top-6 {
-  top: -1.5rem;
-}
-
-.-top-\[23px\] {
-  top: -23px;
 }
 
 .-z-0 {
@@ -4174,25 +4170,34 @@ a {
   display: block;
 }
 
-.dropdownBtn .arrowSvg.active {
+.dropdownBtn .arrowSvg.active,.dropdownBtn2 .arrowSvg.active {
   transform: rotate(0);
 }
 
-.dropdownContent,.accordionContent {
+.dropdownContent,.dropdownContent2,.accordionContent {
   padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: all .4s;
 }
 
-.dropdownContent.active {
+.dropdownContent.active,.dropdownContent2.active {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;
 }
 
-.accordionContent.active{
+.accordionContent.active,.accordionContent2.active{
   max-height: 2000px;
+}
+
+.dropdownContent2.active{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.arrowShape.active{
+  opacity: 100%;
 }
 
 input[type="number"] {

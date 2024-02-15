@@ -173,22 +173,29 @@ a {
 .mobileMenu.active{
   display: block;
 }
-.dropdownBtn .arrowSvg.active {
+.dropdownBtn .arrowSvg.active,.dropdownBtn2 .arrowSvg.active {
   transform: rotate(0);
 }
-.dropdownContent,.accordionContent {
+.dropdownContent,.dropdownContent2,.accordionContent {
   padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: all .4s;
 }
-.dropdownContent.active {
+.dropdownContent.active,.dropdownContent2.active {
   max-height: 2000px;
   margin-top: 18px;
   overflow: hidden;
 }
-.accordionContent.active{
+.accordionContent.active,.accordionContent2.active{
   max-height: 2000px;
+}
+.dropdownContent2.active{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.arrowShape.active{
+  opacity: 100%;
 }
 input[type="number"] {
   -moz-appearance: textfield;
