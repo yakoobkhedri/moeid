@@ -124,8 +124,10 @@ a {
   width: 4px;
 }
 .scroll-custom::-webkit-scrollbar-track {
-  border-radius: 20px;
+  border-radius: 100vw;
   background-color: #E3E3E3;
+  margin-block: .5em;
+  margin-inline: 1em;
 }
 
 ::-webkit-scrollbar-thumb {
