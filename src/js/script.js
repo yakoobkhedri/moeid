@@ -289,3 +289,6 @@ playerVideo.addEventListener("pause", () => {
   playerbutton.style.visibility = "visible";
   playerbutton.style.opacity = "1";
 });
+
+// scroll
+

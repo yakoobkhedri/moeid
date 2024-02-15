@@ -1039,10 +1039,6 @@ video {
   left: 0.25rem;
 }
 
-.left-1\/2 {
-  left: 50%;
-}
-
 .left-10 {
   left: 2.5rem;
 }
@@ -1213,10 +1209,6 @@ video {
 
 .top-1 {
   top: 0.25rem;
-}
-
-.top-1\/2 {
-  top: 50%;
 }
 
 .top-1\/3 {
@@ -1824,28 +1816,12 @@ video {
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
 }
 
-.table {
-  display: table;
-}
-
 .grid {
   display: grid;
-}
-
-.contents {
-  display: contents;
 }
 
 .hidden {
@@ -2550,16 +2526,6 @@ video {
 
 .flex-grow {
   flex-grow: 1;
-}
-
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-rotate-0 {
@@ -4103,17 +4069,15 @@ a {
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
 
-/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/* scrollbar  */
 
 .scroll-custom {
   scrollbar-width: thin;
   scrollbar-color: #1E2D48 #E3E3E3;
 }
 
-/* Chrome, Edge and Safari */
-
 .scroll-custom::-webkit-scrollbar {
-  height: 4px;
+  background-color: #E3E3E3;
   width: 4px;
 }
 
@@ -4122,24 +4086,8 @@ a {
   background-color: #E3E3E3;
 }
 
-.scroll-custom::-webkit-scrollbar-track:hover {
-  background-color: #E3E3E3;
-}
-
-.scroll-custom::-webkit-scrollbar-track:active {
-  background-color: #E3E3E3;
-}
-
-.scroll-custom::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background-color: #1E2D48;
-}
-
-.scroll-custom::-webkit-scrollbar-thumb:hover {
-  background-color: #1E2D48;
-}
-
-.scroll-custom::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb {
+  border-radius: 37px;
   background-color: #1E2D48;
 }
 
