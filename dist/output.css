@@ -1399,6 +1399,10 @@ video {
   grid-column: span 6 / span 6;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
