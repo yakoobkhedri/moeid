@@ -780,6 +780,10 @@ video {
   left: -10rem;
 }
 
+.-left-44 {
+  left: -11rem;
+}
+
 .-left-5 {
   left: -1.25rem;
 }
@@ -1172,6 +1176,10 @@ video {
   right: 10px;
 }
 
+.right-\[123px\] {
+  right: 123px;
+}
+
 .right-\[142px\] {
   right: 142px;
 }
@@ -1346,6 +1354,14 @@ video {
 
 .top-\[83px\] {
   top: 83px;
+}
+
+.right-\[130px\] {
+  right: 130px;
+}
+
+.right-\[135px\] {
+  right: 135px;
 }
 
 .-z-0 {
@@ -1765,6 +1781,10 @@ video {
   margin-top: 13px;
 }
 
+.mt-\[148px\] {
+  margin-top: 148px;
+}
+
 .mt-\[14px\] {
   margin-top: 14px;
 }
@@ -1845,8 +1865,8 @@ video {
   margin-top: auto;
 }
 
-.mt-\[148px\] {
-  margin-top: 148px;
+.mt-\[157px\] {
+  margin-top: 157px;
 }
 
 .block {
@@ -3414,6 +3434,10 @@ video {
   padding: 26px;
 }
 
+.p-9 {
+  padding: 2.25rem;
+}
+
 .\!px-4 {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
@@ -3514,6 +3538,11 @@ video {
   padding-right: 30px;
 }
 
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .px-\[52px\] {
   padding-left: 52px;
   padding-right: 52px;
@@ -3597,11 +3626,6 @@ video {
 .py-\[21px\] {
   padding-top: 21px;
   padding-bottom: 21px;
-}
-
-.px-\[50px\] {
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .pb-10 {
@@ -3778,6 +3802,10 @@ video {
 
 .pt-\[90px\] {
   padding-top: 90px;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-left {
@@ -4675,6 +4703,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   right: -10rem;
 }
 
+:is([dir="ltr"] .ltr\:-right-44) {
+  right: -11rem;
+}
+
 :is([dir="ltr"] .ltr\:-right-5) {
   right: -1.25rem;
 }
@@ -4717,6 +4749,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
 :is([dir="ltr"] .ltr\:left-\[10px\]) {
   left: 10px;
+}
+
+:is([dir="ltr"] .ltr\:left-\[123px\]) {
+  left: 123px;
 }
 
 :is([dir="ltr"] .ltr\:left-\[142px\]) {
@@ -4861,6 +4897,14 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
+}
+
+:is([dir="ltr"] .ltr\:left-\[130px\]) {
+  left: 130px;
+}
+
+:is([dir="ltr"] .ltr\:left-\[135px\]) {
+  left: 135px;
 }
 
 :is([dir="ltr"] .ltr\:order-last) {
@@ -6199,6 +6243,11 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     padding-right: 2rem;
   }
 
+  .md\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -6268,6 +6317,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .md\:leading-7 {
     line-height: 1.75rem;
+  }
+
+  .md\:leading-6 {
+    line-height: 1.5rem;
   }
 
   .md\:opacity-0 {
