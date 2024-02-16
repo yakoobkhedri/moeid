@@ -1420,6 +1420,10 @@ video {
   grid-column: span 6 / span 6;
 }
 
+.col-span-8 {
+  grid-column: span 8 / span 8;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -3402,6 +3406,10 @@ video {
   padding: 26px;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .\!px-4 {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
@@ -3580,6 +3588,11 @@ video {
 .px-\[83px\] {
   padding-left: 83px;
   padding-right: 83px;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pb-10 {
