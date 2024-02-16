@@ -178,10 +178,10 @@ var lawyer2 = new Swiper(".lawyer2", {
   loop: true,
   spaceBetween: 28,
   slidesPerView: 1,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   breakpoints: {
     768: {
       spaceBetween: 48,
