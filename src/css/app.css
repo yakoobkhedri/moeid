@@ -265,38 +265,28 @@ html[dir="ltr"]  .firstSliderContainer:not(.swiper-slide-active) img.data_images
 html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   transform: rotateY(180deg) translate(0, 0);
 }
-#usersComment {
-  transition: all 0.5s;
-}
 #usersComment * {
   transition: all 0.5s;
 }
-#usersComment.active {
-  animation: usersComment 1s linear;
+#usersComment {
+  overflow: hidden;
+  height: 652px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
+
 #usersComment > div.add {
-  animation: usersCommentEfectsadd 1s linear;
+  animation: usersCommentEfectsadd 0.5s linear;
+  transform-origin: center;
 }
+
 #usersComment > div.remove {
   animation: usersCommentEfectsremove 0.5s linear;
-}
-@keyframes usersCommentEfectsadd {
-  0% {
-    opacity: 0;
-    transform: translate(0, 100%);
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-@keyframes usersCommentEfectsremove {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  transform-origin: center;
+  transform: translateY(0);
 }
 @keyframes usersComment {
   0% {
@@ -304,6 +294,28 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   }
   100% {
     transform: translate(0, -35%);
+  }
+}
+@keyframes usersCommentEfectsadd {
+  0% {
+    transform: translate(0, 140px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+@keyframes usersCommentEfectsremove {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
   }
 }
 

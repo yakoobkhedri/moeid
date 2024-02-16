@@ -57,8 +57,10 @@ function createComment(hasAnser) {
   const parentDiv_div2_p = document.createElement("p");
   let answerComment = `
 <div class="bg-[#485368] shadow-15 rounded-2xl relative ltr:rounded-l-[40px] ltr:rounded-r-2xl rounded-r-[40px] p-5 lg:p-[7px] lg:pl-4 flex items-center justify-between flex-wrap md:flex-nowrap gap-5 mb-5 ml-6 lg:mr-[110px]">
-<img alt="arrow" src="../img/arrow3.png" class="absolute ltr:left-20 ltr:right-auto right-20 -top-4">
 
+<svg style="position:absolute;top:-18px;right:60px;left:60px" class="class="ltr:left-20 ltr:right-auto right-20" width="44" height="33" viewBox="0 0 151 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M150.562 33.0001C144.333 33.0001 138.247 31.1229 133.099 27.6131L108.622 10.9241C88.3809 -2.87653 61.7178 -2.73322 41.6265 11.284L18.4922 27.424C13.2896 31.0538 7.09863 33.0001 0.754883 33.0001H150.562Z" fill="#485368"/>
+</svg>
 <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]">
     <div class="flex items-center justify-center mx-auto w-[60px] h-[60px] rounded-full bg-white flex-shrink-0">
         <svg class="shadow-20" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
