@@ -1372,6 +1372,18 @@ video {
   top: 83px;
 }
 
+.top-\[9px\] {
+  top: 9px;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -4939,6 +4951,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:-top-1) {
+  top: -0.25rem;
+}
+
 :is([dir="ltr"] .ltr\:order-last) {
   order: 9999;
 }
@@ -5732,6 +5748,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     padding: 2rem;
   }
 
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
   .sm\:\!px-7 {
     padding-left: 1.75rem !important;
     padding-right: 1.75rem !important;
@@ -6247,6 +6267,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     border-top-right-radius: 0px;
   }
 
+  .md\:border-l {
+    border-left-width: 1px;
+  }
+
   .md\:p-4 {
     padding: 1rem;
   }
@@ -6307,6 +6331,18 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .md\:pt-\[108px\] {
     padding-top: 108px;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .md\:pl-6 {
+    padding-left: 1.5rem;
+  }
+
+  .md\:pr-6 {
+    padding-right: 1.5rem;
   }
 
   .md\:text-right {
@@ -6414,8 +6450,20 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     border-top-right-radius: 0px;
   }
 
+  :is([dir="ltr"] .ltr\:md\:border-l-0) {
+    border-left-width: 0px;
+  }
+
   :is([dir="ltr"] .ltr\:md\:pl-0) {
     padding-left: 0px;
+  }
+
+  :is([dir="ltr"] .ltr\:md\:pl-6) {
+    padding-left: 1.5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:md\:pr-0) {
+    padding-right: 0px;
   }
 
   :is([dir="ltr"] .ltr\:md\:text-left) {
@@ -6918,6 +6966,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     padding-top: 66px;
   }
 
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
   .lg\:text-right {
     text-align: right;
   }
@@ -7130,6 +7182,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .xl\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+
+  .xl\:col-span-9 {
+    grid-column: span 9 / span 9;
   }
 
   .xl\:-ml-\[51px\] {
