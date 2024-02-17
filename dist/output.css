@@ -3260,6 +3260,10 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .bg-\[\#0000000A\] {
   background-color: #0000000A;
 }
@@ -5688,6 +5692,14 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     border-right-width: 2px;
   }
 
+  .sm\:border-dashed {
+    border-style: dashed;
+  }
+
+  .sm\:border-\[\#00000026\] {
+    border-color: #00000026;
+  }
+
   .sm\:bg-secondary {
     --tw-bg-opacity: 1;
     background-color: rgb(30 45 72 / var(--tw-bg-opacity));
@@ -6234,6 +6246,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .md\:border-l {
     border-left-width: 1px;
+  }
+
+  .md\:border-\[\#00000026\] {
+    border-color: #00000026;
   }
 
   .md\:p-4 {
