@@ -1376,10 +1376,6 @@ video {
   top: 83px;
 }
 
-.-right-1 {
-  right: -0.25rem;
-}
-
 .-z-0 {
   z-index: 0;
 }
@@ -1448,16 +1444,8 @@ video {
   grid-column: span 4 / span 4;
 }
 
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
-
 .col-span-6 {
   grid-column: span 6 / span 6;
-}
-
-.col-span-7 {
-  grid-column: span 7 / span 7;
 }
 
 .m-auto {
@@ -1805,10 +1793,6 @@ video {
   margin-top: 13px;
 }
 
-.mt-\[147px\] {
-  margin-top: 147px;
-}
-
 .mt-\[14px\] {
   margin-top: 14px;
 }
@@ -2061,10 +2045,6 @@ video {
   height: 280px;
 }
 
-.h-\[288px\] {
-  height: 288px;
-}
-
 .h-\[297px\] {
   height: 297px;
 }
@@ -2247,30 +2227,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[350px\] {
-  height: 350px;
-}
-
-.h-\[750px\] {
-  height: 750px;
-}
-
-.h-\[850px\] {
-  height: 850px;
-}
-
-.h-\[800px\] {
-  height: 800px;
-}
-
-.h-\[780px\] {
-  height: 780px;
-}
-
-.h-\[700px\] {
-  height: 700px;
 }
 
 .min-h-\[350px\] {
@@ -2493,10 +2449,6 @@ video {
   width: 30px;
 }
 
-.w-\[318px\] {
-  width: 318px;
-}
-
 .w-\[375px\] {
   width: 375px;
 }
@@ -2619,10 +2571,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[95\%\] {
-  width: 95%;
 }
 
 .max-w-\[1233px\] {
@@ -3598,11 +3546,6 @@ video {
   padding-right: 30px;
 }
 
-.px-\[50px\] {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 .px-\[52px\] {
   padding-left: 52px;
   padding-right: 52px;
@@ -4251,8 +4194,16 @@ video {
   --scrollbar-track: #E3E3E3 !important;
 }
 
+.scrollbar-track-transparent {
+  --scrollbar-track: transparent !important;
+}
+
 .scrollbar-thumb-\[\#1E2D48\] {
   --scrollbar-thumb: #1E2D48 !important;
+}
+
+.scrollbar-thumb-transparent {
+  --scrollbar-thumb: transparent !important;
 }
 
 .\[transform\:rotateY\(180deg\)\] {
@@ -5658,6 +5609,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     width: 278px;
   }
 
+  .sm\:w-\[318px\] {
+    width: 318px;
+  }
+
   .sm\:w-\[400px\] {
     width: 400px;
   }
@@ -5676,10 +5631,6 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:w-\[318px\] {
-    width: 318px;
   }
 
   .sm\:max-w-\[424px\] {
@@ -5718,12 +5669,12 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     gap: 1rem;
   }
 
-  .sm\:gap-8 {
-    gap: 2rem;
-  }
-
   .sm\:gap-7 {
     gap: 1.75rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
   }
 
   .sm\:rounded-\[18px\] {
@@ -5768,12 +5719,12 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     padding: 1.5rem;
   }
 
-  .sm\:p-8 {
-    padding: 2rem;
-  }
-
   .sm\:p-7 {
     padding: 1.75rem;
+  }
+
+  .sm\:p-8 {
+    padding: 2rem;
   }
 
   .sm\:p-\[26px\] {
@@ -6701,12 +6652,12 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     margin-top: 2.25rem;
   }
 
-  .lg\:mt-\[240px\] {
-    margin-top: 240px;
-  }
-
   .lg\:mt-\[147px\] {
     margin-top: 147px;
+  }
+
+  .lg\:mt-\[240px\] {
+    margin-top: 240px;
   }
 
   .lg\:block {
@@ -6719,6 +6670,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[288px\] {
+    height: 288px;
   }
 
   .lg\:h-\[449px\] {
@@ -6739,10 +6694,6 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .lg\:h-\[874px\] {
     height: 874px;
-  }
-
-  .lg\:h-\[288px\] {
-    height: 288px;
   }
 
   .lg\:min-h-\[350px\] {
@@ -6898,16 +6849,8 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .lg\:fill-\[\#fcfcfc\] {
-    fill: #fcfcfc;
-  }
-
-  .lg\:fill-\[\#f4f4f4\] {
-    fill: #f4f4f4;
-  }
-
-  .lg\:fill-\[\#f9f9f9\] {
-    fill: #f9f9f9;
+  .lg\:p-0 {
+    padding: 0px;
   }
 
   .lg\:p-\[68px\] {
@@ -6916,10 +6859,6 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .lg\:p-\[7px\] {
     padding: 7px;
-  }
-
-  .lg\:p-0 {
-    padding: 0px;
   }
 
   .lg\:px-0 {
@@ -7032,11 +6971,6 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .lg\:text-\[25px\] {
     font-size: 25px;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .lg\:text-black {
