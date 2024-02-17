@@ -7261,6 +7261,11 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     padding-right: 0px;
   }
 
+  .xl\:px-\[146px\] {
+    padding-left: 146px;
+    padding-right: 146px;
+  }
+
   .xl\:pb-32 {
     padding-bottom: 8rem;
   }
