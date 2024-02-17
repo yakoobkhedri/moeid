@@ -1392,6 +1392,10 @@ video {
   right: auto;
 }
 
+.top-\[52px\] {
+  top: 52px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1891,6 +1895,10 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-44 {
+  margin-top: 11rem;
 }
 
 .block {
@@ -5582,6 +5590,14 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .sm\:mt-\[84px\] {
     margin-top: 84px;
+  }
+
+  .sm\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .sm\:mt-\[156px\] {
+    margin-top: 156px;
   }
 
   .sm\:block {
