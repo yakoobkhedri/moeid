@@ -287,11 +287,14 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   animation: usersCommentEfectsadd 0.5s linear;
   transform-origin: center;
 }
-
+#usersComment > div {
+  transition: all .3s;
+}
 #usersComment > div.remove {
   animation: usersCommentEfectsremove 0.5s linear;
   transform-origin: center;
   transform: translateY(0);
+  height: 0;
 }
 @keyframes usersComment {
   0% {
@@ -314,12 +317,12 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
 @keyframes usersCommentEfectsremove {
   0% {
-    opacity: 1;
+    height: auto;
     transform: translateY(0);
   }
 
-  100% {
-    opacity: 0;
+  99% {
+    height: 0;
     transform: translateY(-100%);
   }
 }

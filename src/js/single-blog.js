@@ -140,7 +140,8 @@ function setComments() {
 }
 setComments();
 function setCommentsEfect() {
-  if (!commentsInfo.comments[commentsInfo.showComments]) return;
+  if (commentsInfo.comments.length-1<commentsInfo.showComments)
+  commentsInfo.showComments=0
   createComment(
     commentsInfo.comments[commentsInfo.showComments].hasCommentsAnswer
   );
