@@ -3511,11 +3511,6 @@ video {
   padding-right: 10px;
 }
 
-.px-\[146px\] {
-  padding-left: 146px;
-  padding-right: 146px;
-}
-
 .px-\[14px\] {
   padding-left: 14px;
   padding-right: 14px;
@@ -4190,16 +4185,8 @@ video {
   height: 8px;
 }
 
-.scrollbar-track-\[\#E3E3E3\] {
-  --scrollbar-track: #E3E3E3 !important;
-}
-
 .scrollbar-track-transparent {
   --scrollbar-track: transparent !important;
-}
-
-.scrollbar-thumb-\[\#1E2D48\] {
-  --scrollbar-thumb: #1E2D48 !important;
 }
 
 .scrollbar-thumb-transparent {
@@ -4249,7 +4236,7 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  overflow-x:hidden;
+  /* overflow-x:hidden; */
 }
 
 a {
@@ -4555,7 +4542,6 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
 #usersComment {
   overflow: hidden;
-  height: 652px;
   transition: all 0.5s;
 }
 
@@ -7201,6 +7187,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .xl\:h-\[553px\] {
     height: 553px;
+  }
+
+  .xl\:h-\[670px\] {
+    height: 670px;
   }
 
   .xl\:h-\[733px\] {

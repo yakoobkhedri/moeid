@@ -34,7 +34,7 @@ html{
 body {
   font-family: yekanBakh-Bold;
   user-select: none;
-  overflow-x:hidden;
+  /* overflow-x:hidden; */
 }
 a {
   cursor: pointer;
@@ -276,7 +276,6 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 }
 #usersComment {
   overflow: hidden;
-  height: 652px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
