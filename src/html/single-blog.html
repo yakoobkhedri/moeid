@@ -22,11 +22,23 @@
     <!-- comment modal -->
     <div class="modal">
       <div style="visibility: hidden; opacity: 0;" data-button="comment-modal"
-          class="modal-container bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex justify-center items-center px-7">
+          class="modal-container bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex justify-center items-center px-4 sm:px-7">
           <div
-              class="modal-content bg-white max-w-[846px] md:min-h-[398px] w-full rounded-[27px] p-5 pb-10 md:p-7 flex flex-col md:flex-row justify-center md:justify-start items-center gap-7 md:gap-14 relative">
-              <div class="flex-grow w-full relative z-10">
-                <h5 class="text-xl font-black font-rokh mb-4 text-secondary mr-[167px]">ارسال دیدگاه</h5>
+              class="modal-content bg-white lg:bg-transparent max-w-[846px] md:min-h-[398px] w-full rounded-[27px] p-5 pt-8 lg:pt-5 pb-10 md:p-7 flex flex-col md:flex-row justify-center md:justify-start items-center gap-7 md:gap-14 relative">
+              <!-- bg -->
+               <img alt="bg" src="../img/Group 2283.png" class="absolute ltr:[transform:rotateY(180deg)] hidden lg:block inset-0 w-full h-full -z-0">
+              <!-- shape -->
+                <div class="absolute -top-9 right-10 ltr:left-10 ltr:right-auto ltr:md:left-[66px] md:right-[66px] shadow-20 w-[70px] h-[70px] rounded-full bg-orange flex items-center justify-center">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.2269 25.3037C21.2392 29.2919 15.3343 30.1535 10.502 27.9188C9.78868 27.6316 9.20383 27.3994 8.64783 27.3994C7.09915 27.4086 5.17151 28.9102 4.16965 27.9096C3.1678 26.9076 4.67058 24.9785 4.67058 23.4204C4.67058 22.8644 4.44765 22.2899 4.16047 21.5752C1.92466 16.7437 2.78752 10.8369 6.77526 6.85001C11.8658 1.75757 20.1363 1.75757 25.2269 6.8487C30.3267 11.949 30.3175 20.2126 25.2269 25.3037Z" stroke="white" stroke-width="1.38158" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.4" d="M21.1403 16.6177H21.1493" stroke="white" stroke-width="1.84211" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.4" d="M15.9093 16.6177H15.9184" stroke="white" stroke-width="1.84211" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.4" d="M10.6782 16.6177H10.6873" stroke="white" stroke-width="1.84211" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              <!--  -->
+              <form class="flex-grow w-full relative z-10">
+                <span class="text-xl font-black font-rokh mb-4 text-secondary text-center ltr:lg:text-left lg:text-right block ltr:lg:ml-[140px] ltr:lg:mr-0 lg:mr-[140px] relative -top-2 lg:-top-3">ارسال دیدگاه</span>
                 <div class="flex flex-col md:flex-row items-center gap-6 mb-6">
                     <div class="rounded-[12px] flex-grow w-full ltr:pr-4 ltr:pl-0 pl-4 flex items-center justify-between gap-3 bg-[#0000000A] text-sm font-normal h-14">
                         <input placeholder="نام و نام خانوادگی" class="flex-grow py-4 ltr:pl-4 ltr:pr-0 pr-4 bg-transparent outline-none w-full">
@@ -67,12 +79,10 @@
                             </svg>
                         </div>
                     </div>
-                    <button class="bg-orange h-14 text-sm md:w-72 w-full cursor-pointer rounded-[14px] shadow-20 text-white font-extrabold">
-                        <p>ارسال دیدگاه</p>
-                    </button>
+                    <input type="submit" value="ارسال دیدگاه" class="bg-orange h-14 text-sm md:w-72 w-full cursor-pointer rounded-[14px] shadow-20 text-white font-extrabold">
                 </div>
-            </div>
-              <button class="absolute top-4 left-4 ltr:right-4 ltr:left-auto close-button p-2">
+              </form>
+              <button class="absolute top-4 left-4 ltr:right-4 ltr:left-auto close-button p-2 z-10">
                   <svg class="w-4" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.3" d="M16 2L2 16M2 2L16 16" stroke="black" stroke-width="2.15385"
                           stroke-linecap="round" stroke-linejoin="round"></path>
@@ -5002,7 +5012,7 @@
                   دیدگاه کاربران
                 </h3>
               </div>
-              <h2 class="text-white opacity-5 font-rokh font-black text-[38px] sm:text-[53px] absolute text-center sm:text-right ltr:sm:text-left -top-[2px] sm:-top-[7px] left-0 right-0 mx-auto ltr:sm:-left-[27px] ltr:right-auto sm:-right-[27px]">دیدگاه کاربران</h2>
+              <h2 class="text-white opacity-5 font-rokh font-black text-[38px] sm:text-[53px] absolute text-center sm:text-right ltr:sm:text-left -top-[2px] sm:-top-[7px] left-auto right-auto w-full mx-auto ltr:sm:-left-[27px] ltr:right-auto sm:-right-[27px]">دیدگاه کاربران</h2>
             </div>
             <a id="comment-modal"
               class="w-[182px] h-[53px] relative text-white bg-orange rounded-lg text-sm font-bold flex items-center justify-center shadow-19"
