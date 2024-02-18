@@ -1498,11 +1498,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.my-\[100px\] {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -5599,16 +5594,16 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     right: 116px;
   }
 
+  .sm\:top-0 {
+    top: 0px;
+  }
+
   .sm\:top-1 {
     top: 0.25rem;
   }
 
   .sm\:top-\[245px\] {
     top: 245px;
-  }
-
-  .sm\:top-0 {
-    top: 0px;
   }
 
   .sm\:col-span-10 {
