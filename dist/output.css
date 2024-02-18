@@ -5606,6 +5606,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     top: 245px;
   }
 
+  .sm\:top-20 {
+    top: 5rem;
+  }
+
   .sm\:col-span-10 {
     grid-column: span 10 / span 10;
   }
