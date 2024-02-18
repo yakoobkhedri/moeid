@@ -6694,8 +6694,8 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     top: -0.25rem;
   }
 
-  .lg\:-top-3 {
-    top: -0.75rem;
+  .lg\:-top-2 {
+    top: -0.5rem;
   }
 
   .lg\:-top-\[186px\] {
@@ -6764,6 +6764,10 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 
   .lg\:top-\[78px\] {
     top: 78px;
+  }
+
+  .lg\:-top-0 {
+    top: -0px;
   }
 
   .lg\:order-first {
