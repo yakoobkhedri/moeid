@@ -70,7 +70,8 @@ var banner = new Swiper(".banner", {
 });
 var aboutBanner = new Swiper(".aboutBanner", {
   slidesPerView: 1,
-  spaceBetween: 180,
+  loop:true,
+  spaceBetween: 0,
   autoplay: true,
   pagination: {
     el: ".swiper-pagination2",
