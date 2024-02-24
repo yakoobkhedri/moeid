@@ -165,11 +165,8 @@ var statistics= new Swiper(".statistics", {
 var groupSwiper= new Swiper(".groupSwiper", {
   loop: true,
   spaceBetween: 35,
-  slidesPerView: 1,
+  slidesPerView: 2.8,
   breakpoints: {
-    576: {
-      slidesPerView: 2,
-    },
     768: {
       slidesPerView: 3,
     },
