@@ -5605,6 +5605,30 @@ table tr:last-child td:last-child {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:right-14) {
+  right: 3.5rem;
+}
+
+:is([dir="ltr"] .ltr\:-left-7) {
+  left: -1.75rem;
+}
+
+:is([dir="ltr"] .ltr\:left-\[74px\]) {
+  left: 74px;
+}
+
+:is([dir="ltr"] .ltr\:right-\[74px\]) {
+  right: 74px;
+}
+
+:is([dir="ltr"] .ltr\:-right-\[102px\]) {
+  right: -102px;
+}
+
+:is([dir="ltr"] .ltr\:left-8) {
+  left: 2rem;
+}
+
 :is([dir="ltr"] .ltr\:order-last) {
   order: 9999;
 }
@@ -5997,6 +6021,10 @@ table tr:last-child td:last-child {
   margin-right: auto;
 }
 
+:is([dir="rtl"] .rtl\:mr-5) {
+  margin-right: 1.25rem;
+}
+
 :is([dir="rtl"] .rtl\:rotate-0) {
   --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -6004,6 +6032,10 @@ table tr:last-child td:last-child {
 
 :is([dir="rtl"] .rtl\:justify-end) {
   justify-content: flex-end;
+}
+
+:is([dir="rtl"] .rtl\:border-r-2) {
+  border-right-width: 2px;
 }
 
 :is([dir="rtl"] .rtl\:text-right) {
@@ -6186,6 +6218,10 @@ table tr:last-child td:last-child {
 
   .sm\:top-\[245px\] {
     top: 245px;
+  }
+
+  .sm\:right-auto {
+    right: auto;
   }
 
   .sm\:col-span-10 {
@@ -6815,6 +6851,38 @@ table tr:last-child td:last-child {
     right: 0.75rem;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:-left-14) {
+    left: -3.5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:-right-14) {
+    right: -3.5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:-left-\[57px\]) {
+    left: -57px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:left-\[108px\]) {
+    left: 108px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:left-\[140px\]) {
+    left: 140px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:-right-6) {
+    right: -1.5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:right-\[118px\]) {
+    right: 118px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:right-\[152px\]) {
+    right: 152px;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:ml-0) {
     margin-left: 0px;
   }
@@ -7415,6 +7483,10 @@ table tr:last-child td:last-child {
     right: 53px;
   }
 
+  :is([dir="ltr"] .ltr\:md\:-left-\[34px\]) {
+    left: -34px;
+  }
+
   :is([dir="ltr"] .ltr\:md\:ml-4) {
     margin-left: 1rem;
   }
@@ -7425,6 +7497,10 @@ table tr:last-child td:last-child {
 
   :is([dir="ltr"] .ltr\:md\:mr-14) {
     margin-right: 3.5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:md\:ml-0) {
+    margin-left: 0px;
   }
 
   :is([dir="ltr"] .ltr\:md\:rounded-l-none) {
@@ -7471,6 +7547,10 @@ table tr:last-child td:last-child {
 
   :is([dir="ltr"] .ltr\:md\:text-left) {
     text-align: left;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:mr-0) {
+    margin-right: 0px;
   }
 }
 
@@ -8143,6 +8223,10 @@ table tr:last-child td:last-child {
 
   :is([dir="ltr"] .ltr\:lg\:right-auto) {
     right: auto;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:left-9) {
+    left: 2.25rem;
   }
 
   :is([dir="ltr"] .ltr\:lg\:-ml-12) {
