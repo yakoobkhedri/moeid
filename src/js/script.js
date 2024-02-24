@@ -288,6 +288,24 @@ var customers = new Swiper(".customers", {
     clickable: true,
   }
 });
+var comment = new Swiper(".comment", {
+  loop: true,
+  spaceBetween:49,
+  slidesPerView: 1,
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+    },
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
 // radio input
 
 let addressItem=Array.from(document.getElementsByClassName('addressItem'));
