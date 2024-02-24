@@ -290,11 +290,12 @@ var customers = new Swiper(".customers", {
 });
 var comment = new Swiper(".comment", {
   loop: true,
-  spaceBetween:49,
+  spaceBetween:10,
   slidesPerView: 1,
   breakpoints: {
     992: {
       slidesPerView: 2,
+      spaceBetween:49,
     },
   },
   autoplay: {
