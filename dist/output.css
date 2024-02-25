@@ -8065,6 +8065,10 @@ table tr:last-child td:last-child {
     padding: 7px;
   }
 
+  .lg\:p-\[px\] {
+    padding: px;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
