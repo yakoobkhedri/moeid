@@ -365,6 +365,16 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 .migrate-section tbody td{
   @apply py-3 px-4 border border-[#0000001A] opacity-60;
 }
+.empty-comment img[alt="bg"]{
+  height: 400px!important;
+}
+.empty-comment #usersComment{
+  display: none!important;
+  height: 0!important;
+}
+.empty-comment .empty-box{
+  display: block!important;
+}
 table {
   border-collapse: separate;
   border-spacing: 0;
