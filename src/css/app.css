@@ -145,7 +145,10 @@ a {
   border-radius: 2rem !important;
   border: 0.3rem solid #1e1f22 !important;
 }
-
+.bg-blur{
+  background-color: rgba(255, 255, 255, 0.91);
+  backdrop-filter: blur(4px);
+}
 .bg-pinkgradient3{
   background: linear-gradient(90deg, #E3E9F2 0%, rgba(227, 232, 242, 0) 221.14%);
 }
