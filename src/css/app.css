@@ -314,10 +314,11 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   position: absolute;
   width: 20px;
   height: 20px;
-  border-radius: 50%
+  border-radius: 50%;
+  right: -28px
 }
-.migrate-section ul li p{
-  @apply text-sm opacity-50 mr-7 ltr:ml-7 ltr:mr-0;
+.migrate-section ul li{
+  @apply text-sm text-[#7f7f7f] mx-7;
 }
 .migrate-section table{
   @apply overflow-hidden rounded-[18px] w-full ltr:text-left text-right;

@@ -5040,19 +5040,17 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   position: absolute;
   width: 20px;
   height: 20px;
-  border-radius: 50%
+  border-radius: 50%;
+  right: -28px
 }
 
-.migrate-section ul li p {
+.migrate-section ul li {
+  margin-left: 1.75rem;
   margin-right: 1.75rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  opacity: 0.5;
-}
-
-:is([dir="ltr"] .migrate-section ul li p) {
-  margin-left: 1.75rem;
-  margin-right: 0px;
+  --tw-text-opacity: 1;
+  color: rgb(127 127 127 / var(--tw-text-opacity));
 }
 
 .migrate-section table {
