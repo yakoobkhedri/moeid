@@ -321,7 +321,9 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
     display:block;
   }
 }
-
+.blog-description p,.blog-description span{
+  text-align: justify!important;
+}
 .blog-description img{
   max-width: 581px;
   width: 100%;
@@ -331,7 +333,7 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
   display: block;
 }
 .migrate-section ul{
-  @apply border-dashed ltr:border-l-2 ltr:border-r-0 ltr:pl-[18px] ltr:pr-0 border-r-2 pr-[18px] border-[#00000026] mt-7 mr-4 ltr:ml-4 ltr:mr-0;
+  @apply border-dashed ltr:border-l-2 ltr:border-r-0 ltr:pl-[18px] ltr:pr-0 border-r-2 pr-[18px] border-[#00000026] my-7 mr-4 ltr:ml-4 ltr:mr-0;
 }
 .migrate-section ul li{
   @apply relative -right-[28px] first:pt-0 last:!pb-0 ltr:-left-[29px] ltr:right-0 flex items-center gap-2 py-3 sm:py-[22px];
@@ -365,12 +367,18 @@ html[dir="ltr"] .firstSliderContainer img.data_imagesContRightLeft{
 .migrate-section tbody td{
   @apply py-3 px-4 border border-[#0000001A] opacity-60;
 }
-.empty-comment img[alt="bg"]{
+.empty-comment > img{
   height: 400px!important;
 }
 .empty-comment #usersComment{
   display: none!important;
   height: 0!important;
+}
+.empty-box{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  display: none;
 }
 .empty-comment .empty-box{
   display: block!important;
