@@ -1672,6 +1672,10 @@ video {
   margin-top: -5rem;
 }
 
+.-mt-4 {
+  margin-top: -1rem;
+}
+
 .-mt-40 {
   margin-top: -10rem;
 }
@@ -2654,6 +2658,10 @@ video {
 
 .w-\[24\%\] {
   width: 24%;
+}
+
+.w-\[241px\] {
+  width: 241px;
 }
 
 .w-\[242px\] {
@@ -4038,6 +4046,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -5243,6 +5255,23 @@ table tr:last-child td:last-child {
 :is([dir="ltr"] table tr:last-child td:last-child) {
   border-bottom-right-radius: 18px;
   border-bottom-left-radius: 0px;
+}
+
+/* toast */
+
+.toast{
+  visibility: hidden;
+  animation: toastFade 5s ease-in-out;
+}
+
+@keyframes toastFade {
+  0% {
+    visibility: visible;
+  }
+
+  100%{
+    visibility: hidden!important;
+  }
 }
 
 @media (min-width: 992px) {

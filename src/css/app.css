@@ -417,7 +417,19 @@ table tr:last-child td:last-child {
   border-bottom-left-radius: 18px;
   @apply ltr:rounded-br-[18px] ltr:rounded-bl-none;
 }
-
+/* toast */
+.toast{
+  visibility: hidden;
+  animation: toastFade 5s ease-in-out;
+}
+@keyframes toastFade {
+  0% {
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden!important;
+  }
+}
 @media (min-width: 992px) {
   .items-lg-normal{
     align-items: normal;
