@@ -5386,6 +5386,11 @@ table tr:last-child td:last-child {
   padding: 1.25rem;
 }
 
+.group:hover .group-hover\:py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .group:hover .group-hover\:pt-6 {
   padding-top: 1.5rem;
 }
