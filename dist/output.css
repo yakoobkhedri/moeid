@@ -2461,6 +2461,10 @@ video {
   height: 100%;
 }
 
+.max-h-0 {
+  max-height: 0px;
+}
+
 .min-h-\[350px\] {
   min-height: 350px;
 }
@@ -5367,6 +5371,23 @@ table tr:last-child td:last-child {
 
 .group:hover .group-hover\:grid {
   display: grid;
+}
+
+.group:hover .group-hover\:max-h-max {
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
+.group:hover .group-hover\:overflow-visible {
+  overflow: visible;
+}
+
+.group:hover .group-hover\:p-5 {
+  padding: 1.25rem;
+}
+
+.group:hover .group-hover\:pt-6 {
+  padding-top: 1.5rem;
 }
 
 .group:hover .group-hover\:font-bold {
